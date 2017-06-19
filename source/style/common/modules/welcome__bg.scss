@@ -1,0 +1,13 @@
+// стили welcome__bg
+
+.welcome__bg {
+	background: url(../img/welcome__bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}

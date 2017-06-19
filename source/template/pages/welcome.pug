@@ -2,8 +2,33 @@ extends ../_template
 
 block variables
   - var title = 'Home page'
-  - var url_css = "/app/css/welcome.css"
-  - var url_js = "/app/js/welcome.js"
+  - var url_css = "app/css/welcome.css"
+  - var url_js = "app/js/welcome.js"
 
 block content
-  
+  section.welcome__bg
+    button.welcome__btn-auto Авторизоваться
+    div.user-block
+      div.user-block__top
+        div.user-block__photo
+          img(src="app/img/user-block__photo.png")
+        span.user-block__name Андрей Лейкин
+        span.user-block__desc Личный сайт веб разработчика
+        div.user-block__social
+          span
+            a(href="#") Вк
+          span
+            a(href="#") Гитхаб
+          span
+            a(href="#") Inst
+      div.user-block__bottom
+        nav.user-block__nav
+          ul.user-block__list
+            li.user-block__item
+              a.user-block__link(href="#") Мои   работы
+            li.user-block__item
+              a.user-block__link(href="about.html") Обо   мне
+            li.user-block__item
+              a.user-block__link(href="#") Блог
+    span.welcome__desc © Лейкин Андрей | создано с любовью в LoftSchool | 2017
+

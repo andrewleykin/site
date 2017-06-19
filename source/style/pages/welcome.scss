@@ -1,7 +1,23 @@
 // страница welcome
 
-body {
-  margin: 0;
+@import '../common/style';
+@import '../common/vars';
+@import '../common/modules/welcome__bg';
+
+.welcome__btn-auto {
+	padding: 15px 30px;
+	color: #FFF;
+	border: 2px solid white;
+	border-radius: 5px;
+	background: transparent;
+	align-self: flex-end;
+	cursor: pointer;
 }
 
-@import '../common/greating';
+@import '../common/modules/user-block';
+
+
+.welcome__desc {
+	color: #FFF;
+	align-self: center;
+}

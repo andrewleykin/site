@@ -1,0 +1,65 @@
+// стили header
+
+.welcome__bg {
+	&::before, &::after {
+		width: 50%;
+		height: 20%;
+		display: block;
+		content: "";
+		position: absolute;
+	}
+	&::before {
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(189deg, transparent 50%, #efeee9 50%);
+	}
+	&::after {
+		bottom: 0;
+		right: 0;
+		background-image: linear-gradient(171deg, transparent 50%, #efeee9 50%);
+	}
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		span {
+			margin: 0 10px;
+		}
+	}
+	&__menu {
+		width: 40px;
+		height: 7px;
+		border-radius: 3px;
+		content: "";
+		background: #FFF;
+		cursor: pointer;
+		&::after, &::before {
+			display: block;
+			width: 40px;
+			height: 7px;
+			border-radius: 3px;
+			content: "";
+			background: #FFF;
+		}
+		&::before {
+			transform: translateY(12px);
+		}
+		&::after {
+			transform: translateY(-19px);
+		}
+	}
+}
+.user-block {
+	background-color: transparent;
+	transform: translateY(-50%);
+	&__name {
+		color: white;
+	}
+	&__desc {
+		color: white;
+	}
+}

@@ -1,0 +1,63 @@
+// стили user-block
+
+.user-block {
+	background: rgba(255,255,255,.7);
+	margin: auto;
+	width: 380px;
+	margin-bottom: 100px;
+	&__top {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__photo {
+
+		margin: 25px 0;
+	}
+	&__name {
+		display: block;
+		font-size: 28px;
+		line-height: 34px;
+		color: $greyColor;
+		margin-bottom: 10px;
+	}
+	&__desc {
+		color: $greyColor;
+		opacity: 0.8;
+		margin-bottom: 35px;
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		span {
+			margin: 0 10px;
+		}
+	}
+	&__bottom {
+		background: #73CAC2;
+	}
+	&__nav {
+		width: 100%;
+		color: #FFF;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: inline-block;
+		background: $lightColor;
+		opacity: 0.8;
+		transition: 0.5s else;
+		&:hover {
+			background: $greenColor;
+			opacity: 0.8;
+		}
+	}
+	&__link {
+		display: block;
+		cursor: pointer;
+		padding: 15px 33px;
+	}
+}

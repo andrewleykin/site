@@ -1,0 +1,102 @@
+// страница about
+
+@import '../common/style';
+@import '../common/vars';
+@import '../common/modules/welcome__bg';
+@import '../common/modules/user-block';
+@import '../common/modules/header';
+@import '../common/modules/footer';
+
+body {
+	background: #EFEEE9;
+}
+
+.content {
+	width: 100vw;
+	margin-bottom: 45px;
+	@include flex(row, space-around, flex-start);
+	margin: 0 auto;
+}
+.about-me {
+	width: 48%;
+	@include flex(column, center, center);
+	text-align: center;
+	&__title {
+		@include sticks;
+		&-min {
+			@include sticks;
+		}
+	}
+	&__photo {
+		margin-bottom: 40px;
+	}
+	&__desc {
+		width: 61%;
+		margin: 0 auto 40px;
+		p {
+			margin-bottom: 10px;
+			color: $greyColor;
+			text-align: left;
+		}
+	}
+}
+.skills {
+	width: 48%;
+	@include flex(column, center, center);
+	&__title {
+		@include sticks;
+		text-align: center;
+		margin-bottom: 30px;
+		&::before,&::after {
+			margin-top: -9%;
+		}
+	}
+	&__desc {
+		width: 63%;
+		color: $greyColor;
+		margin-bottom: 65px;
+	}
+	&__name {
+		width: 63%;
+		margin: 0 auto 20px;
+		display: block;
+		color: $greyColor;
+		font-size: 28px;
+		line-height: 32px;
+		align-self: flex-start;
+	}
+	&__items {
+		margin-bottom: 45px;
+	}
+}
+.map {
+	min-height: 120vh;
+	width: 100vw;
+	background: url("../img/map__bg.jpg") no-repeat center center;
+	background-size: cover;
+	@include flex(row, center, center);
+}
+.contacts {
+	width: 380px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	color: $greyColor;
+	@include flex(column, center, flex-start);
+	margin-top: -10%;
+	span {
+		margin-bottom: 25px;
+		padding-left: 80px;
+	}
+	&__title {
+		text-align: center;
+		color: $darkColor;
+		margin: 0 auto 45px;
+		@include sticks;
+		&::before,&::after {
+			color: #d5d6d7;
+			opacity: 1;
+		}
+	}
+	
+}
+

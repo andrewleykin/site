@@ -4,5 +4,5 @@
 
 module.exports = [
   './source/js/pages/welcome.js',
-  './source/js/pages/about__me.js'
+  './source/js/pages/about.js'
 ];
