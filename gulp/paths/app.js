@@ -3,6 +3,6 @@
 'use strict';
 
 module.exports = [
-  './source/js/pages/welcome.js',
+  './source/js/pages/index.js',
   './source/js/pages/about.js'
 ];
