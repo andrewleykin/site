@@ -1,3 +1,5 @@
+// сервер
+
 'use strict';
 
 module.exports = function() {

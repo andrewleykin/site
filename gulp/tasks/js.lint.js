@@ -1,3 +1,5 @@
+// проверка js кода
+
 'use strict';
 
 module.exports = function() {

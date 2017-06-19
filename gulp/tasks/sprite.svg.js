@@ -1,3 +1,5 @@
+// создание спрайтов svg
+
 'use strict';
 
 module.exports = function() {
@@ -24,6 +26,6 @@ module.exports = function() {
           }
         }
       }))
-      .pipe($.gulp.dest($.config.root + '/assets/img/sprite'))
+      .pipe($.gulp.dest($.config.root + '/app/img/sprite'))
   })
 };

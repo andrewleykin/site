@@ -1,3 +1,5 @@
+// шаблон структуры страницы
+
 block variables
 
 doctype html
@@ -14,10 +16,10 @@ html
     //- favicon block start
     //- favicon block end
 
-    link(rel='stylesheet' href='/assets/css/foundation.css')
-    link(rel='stylesheet' href='/assets/css/app.css')
-    script(src='/assets/js/foundation.js' defer)
-    script(src='/assets/js/app.js' defer)
+    link(rel='stylesheet' href='/app/css/foundation.css')
+    link(rel='stylesheet' href='' + url_css)
+    script(src='/app/js/foundation.js' defer)
+    script(src="" + url_js defer)
 
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")

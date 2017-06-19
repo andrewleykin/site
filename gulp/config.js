@@ -1,3 +1,5 @@
+// переменные для конфига
+
 module.exports = {
   root: './build',
 

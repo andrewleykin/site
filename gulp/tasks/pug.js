@@ -1,3 +1,5 @@
+// преобразование pug файлов
+
 'use strict';
 
 module.exports = function() {

@@ -1,3 +1,5 @@
+// удалить папку "build"
+
 'use strict';
 
 module.exports = function() {

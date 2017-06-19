@@ -1,3 +1,5 @@
+// подключение css библиотек
+
 'use strict';
 
 module.exports = [

@@ -1,3 +1,5 @@
+// подключение js библиотек
+
 'use strict';
 
 module.exports = [

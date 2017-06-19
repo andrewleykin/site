@@ -14,7 +14,7 @@ module.exports = function () {
 	
 	  // Прописываем путь для картинки
 	  var imgStream = spriteData.img
-		.pipe($.gulp.dest($.config.root + '/assets/img'));
+		.pipe($.gulp.dest($.config.root + '/app/img'));
 		
 	  // Прописываем путь для файла стилей
 	  var cssStream = spriteData.css

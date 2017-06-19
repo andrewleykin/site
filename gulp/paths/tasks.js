@@ -1,3 +1,5 @@
+// перечисление всех задач
+
 'use strict';
 
 module.exports = [
