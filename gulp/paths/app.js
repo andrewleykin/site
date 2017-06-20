@@ -4,5 +4,7 @@
 
 module.exports = [
   './source/js/pages/index.js',
-  './source/js/pages/about.js'
+  './source/js/pages/about.js',
+  './source/js/pages/blog.js',
+  './source/js/pages/login.js'
 ];

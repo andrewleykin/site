@@ -1,0 +1,39 @@
+// страница login
+
+@import '../common/style';
+@import '../common/vars';
+@import '../common/modules/welcome__bg';
+
+// для быстрого перехода на главную
+
+.welcome__bg {
+	a {
+		position: absolute;
+		padding: 20px;
+		border: 2px solid white;
+		color: #FFF;
+	}
+}
+
+.login{
+	background: rgba(255,255,255,.7);
+	margin: auto;
+	width: 380px;
+	border-radius: $user-block__radius;
+	&__top {
+		@include flex(column,space-between,center);
+	}
+	&__title {
+		margin-top: 40px;
+		@include sticks;
+		&::after,&::before {
+			margin-top: 1%;
+		}
+	}
+	&__login,&__pass{
+		display: block;
+		padding: 10px 20px;
+		width: 270px;
+		margin: 0 20px 20px auto;
+	}
+}

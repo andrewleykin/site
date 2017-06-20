@@ -1,13 +1,18 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 main {
-	min-height: 100%;
-	margin-bottom: -140px;
+	flex: 1 0 auto;
 }
 
 .footer {
+	flex: 0 0 auto;
 	width: 100vw;
-	margin-top: -150px;
 	height: 150px;
-	background: rgba(0,0,0,0.7);
+	background: #555b5e;
 	color: #FFF;
 	@include flex(column,space-between,flex-start);
 }

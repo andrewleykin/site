@@ -20,20 +20,31 @@ a {
 	color: black;
 }
 
+
+.container-1200 {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .title-min {
 	font-size: 2.3rem;
 	line-height: 1.2em;
 	margin-bottom: 40px;
 	color: $darkColor;
+	text-transform: uppercase;
 }
 .title-big {
 	font-size: 3.9rem;
 	line-height: 1.1em;
 	margin-bottom: 50px;
 	color: $darkColor;
+	text-transform: uppercase;
 
 }
-
+.blog-title {
+	display: none;
+}
 
 // миксины
 @mixin flex($fd, $jc, $ai) {

@@ -1,0 +1,46 @@
+extends ../_template
+
+block variables
+  - var title = 'Index page'
+  - var url_css = "app/css/login.css"
+  - var url_js = "app/js/login.js"
+
+block content
+  section.welcome__bg
+   .login
+     .login__top
+       span.login__title.title-min Авторизуйтесь
+       form.login__form(action="#")
+         input.login__login(
+           placeholder="Логин"
+           type="text"
+         )
+         input.login__pass(
+           placeholder="Пароль"
+           type="password"
+         )
+         input.login__check(
+         type="checkbox"
+         id="checkbox"
+         )
+         label.login__check-label(for="checkbox") Я человек
+         span.login__q Вы точно не робот?
+         input.login__radio(
+         type="radio"
+         name="radio"
+         id="radio1"
+         )
+         label.login__radio-label(for="radio1") Да
+         input.login__radio(
+         type="radio"
+         name="radio"
+         id="radio2"
+         )
+         label.login__radio-label(for="radio2") Не уверен 
+         input.login__btn(
+         type="submit"
+         name="submit"
+         value="Войти"
+         )
+     .login__bottom
+       a(href="index.html").login__link На главную

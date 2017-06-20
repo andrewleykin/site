@@ -1,0 +1,13 @@
+extends ../_template
+
+block variables
+  - var title = 'Blog page'
+  - var url_css = "app/css/blog.css"
+  - var url_js = "app/js/blog.js"
+
+block content
+  .wrapper
+    main
+      include ../common/_welcome__bg
+      include ../common/blog/_content
+    include ../common/_footer

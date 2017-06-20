@@ -5,13 +5,13 @@
 	margin: auto;
 	width: 380px;
 	margin-bottom: 100px;
+	border-radius: $user-block__radius;
 	&__top {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
 	&__photo {
-
 		margin: 25px 0;
 	}
 	&__name {
@@ -36,6 +36,8 @@
 	}
 	&__bottom {
 		background: #73CAC2;
+		border-bottom-left-radius: $user-block__radius;
+		border-bottom-right-radius: $user-block__radius;
 	}
 	&__nav {
 		width: 100%;
@@ -50,6 +52,12 @@
 		background: $lightColor;
 		opacity: 0.8;
 		transition: 0.5s else;
+		&:first-child {
+		border-bottom-left-radius: $user-block__radius;
+		}
+		&:last-child {
+		border-bottom-right-radius: $user-block__radius;
+		}
 		&:hover {
 			background: $greenColor;
 			opacity: 0.8;
