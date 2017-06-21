@@ -1,9 +1,10 @@
-// страница welcome
+// страница index
 
-@import '../common/style';
-@import '../common/vars';
-@import '../common/modules/welcome__bg';
+@import '../common/_style';
+@import '../common/_vars';
+@import '../common/modules/_welcome__bg';
 
+// кнопка авторизоваться
 .welcome__btn-auto {
 	align-self: flex-end;
 	cursor: pointer;
@@ -24,9 +25,9 @@
 	}
 }
 
-@import '../common/modules/user-block';
+@import '../common/modules/_user-block';
 
-
+// описание в футере
 .welcome__desc {
 	color: #FFF;
 	align-self: center;

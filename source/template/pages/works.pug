@@ -1,0 +1,12 @@
+extends ../_template
+
+block variables
+  - var title = 'About page'
+  - var url_css = "app/css/works.css"
+  - var url_js = "app/js/works.js"
+
+block content
+  main
+    include ../common/_welcome__bg
+    include ../common/works/_title
+  include ../common/_footer

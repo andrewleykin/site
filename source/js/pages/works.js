@@ -3,5 +3,5 @@
 (function() {
   'use strict';
 
-  console.log('in about.js');
+  console.log('in works.js');
 })();

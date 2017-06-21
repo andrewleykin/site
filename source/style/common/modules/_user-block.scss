@@ -1,7 +1,7 @@
 // стили user-block
 
 .user-block {
-	background: rgba(255,255,255,.7);
+	background: rgba(252,252,252,.85);
 	margin: auto;
 	width: 380px;
 	margin-bottom: 100px;
@@ -50,7 +50,6 @@
 	&__item {
 		display: inline-block;
 		background: $lightColor;
-		opacity: 0.8;
 		transition: 0.5s else;
 		&:first-child {
 		border-bottom-left-radius: $user-block__radius;
@@ -60,12 +59,12 @@
 		}
 		&:hover {
 			background: $greenColor;
-			opacity: 0.8;
 		}
 	}
 	&__link {
 		display: block;
 		cursor: pointer;
 		padding: 15px 33px;
+		color: #FFF;
 	}
 }

@@ -4,6 +4,7 @@
 @import '../common/vars';
 @import '../common/modules/welcome__bg';
 
+// форма входа
 .login{
 	background: rgba(255,255,255,.7);
 	margin: auto;
@@ -14,6 +15,7 @@
 	&__top {
 		@include flex(column,space-between,center);
 	}
+	// заголовок
 	&__title {
 		margin-top: 40px;
 		@include sticks;
@@ -21,6 +23,7 @@
 			margin-top: 1%;
 		}
 	}
+	// логин и пароль
 	&__login,&__pass{
 		padding: 10px 20px;
 		width: 296px;
@@ -46,6 +49,7 @@
 			border-bottom-left-radius: $user-block__radius;
 		}
 	}
+	// Чекбокс
 	&__check {
 		position: relative;
 		margin-right: 5px;
@@ -76,11 +80,13 @@
 			display: block;
 		}
 	}
+	// вопрос "Вы точно человек?"
 	&__q {
 		display: block;
 		text-align: center;
 		margin-bottom: 15px;
 	}
+	// Радио кнопки
 	&__radio {
 		position: relative;
 		margin-right: 5px;
@@ -112,10 +118,11 @@
 			border: 0;
 			transform: translate(-3px, 2px);
 		}
-		&:checked::after {
+		&:checked::after{
 			display: block;
 		}
 	}
+	// кнопки входа и "на главную"
 	&__btn, &__link  {
 		bottom: 0;
 		right: 0;
@@ -140,4 +147,11 @@
 		border-right: 2px solid #74b9b6;
 		text-align: center;
 	}
+}
+// для текста при выбранной радио кнопке
+#radio1:checked + label[for="radio1"] {
+	color: $lightColor;
+}
+#radio2:checked + label[for="radio2"] {
+	color: $lightColor;
 }

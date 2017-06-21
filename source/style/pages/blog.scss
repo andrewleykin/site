@@ -1,11 +1,11 @@
 // страница blog
 
-@import '../common/style';
-@import '../common/vars';
-@import '../common/modules/welcome__bg';
-@import '../common/modules/user-block';
-@import '../common/modules/header';
-@import '../common/modules/footer';
+@import '../common/_style';
+@import '../common/_vars';
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
+@import '../common/modules/_header';
+@import '../common/modules/_footer';
 
 // для названия страницы
 
@@ -48,6 +48,7 @@
 .content {
 	@include flex(row,space-between,flex-start);
 }
+// Блок сайдбар слева
 .sidebar {
 	width: 31%;
 	text-align: right;
@@ -75,6 +76,7 @@
 		}
 	}
 }
+// блок для записей
 .write {
 	width: 65%;
 	&__item {
@@ -101,21 +103,4 @@
 		color: #00BFA5;
 		margin-bottom: 35px;
 	}
-}
-
-
-
-
-
-
-// для футера
-
-main::after {
-	content: "";
-	display: block;
-	height: 150px;
-}
-
-.footer {
-	background: #000;
 }

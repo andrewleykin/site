@@ -1,11 +1,11 @@
 // страница about
 
-@import '../common/style';
-@import '../common/vars';
-@import '../common/modules/welcome__bg';
-@import '../common/modules/user-block';
-@import '../common/modules/header';
-@import '../common/modules/footer';
+@import '../common/_style';
+@import '../common/_vars';
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
+@import '../common/modules/_header';
+@import '../common/modules/_footer';
 
 body {
 	background: #EFEEE9;
@@ -17,6 +17,7 @@ body {
 	@include flex(row, space-around, flex-start);
 	margin: 0 auto;
 }
+// Блок ОБО МНЕ
 .about-me {
 	width: 48%;
 	@include flex(column, center, center);
@@ -40,6 +41,7 @@ body {
 		}
 	}
 }
+// Блок скилов
 .skills {
 	width: 48%;
 	@include flex(column, center, center);
@@ -69,6 +71,7 @@ body {
 		margin-bottom: 45px;
 	}
 }
+// Блок карты
 .map {
 	height: 100vh;
 	width: 100vw;
@@ -76,6 +79,7 @@ body {
 	background-size: cover;
 	@include flex(row, center, center);
 }
+// блок контакты в карте
 .contacts {
 	width: 380px;
 	background: rgba(255,255,255,0.7);
