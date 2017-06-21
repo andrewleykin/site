@@ -1,0 +1,159 @@
+// страница login
+
+.login {
+	@import '../common/style';
+	@import '../common/vars';
+	@import '../common/modules/welcome__bg';
+
+	// форма входа
+	.login{
+		background: rgba(255,255,255,.7);
+		margin: auto;
+		width: 380px;
+		border-radius: $user-block__radius;
+		padding-bottom: 80px;
+		position: relative;
+		&__top {
+			@include flex(column,space-between,center);
+		}
+		// заголовок
+		&__title {
+			margin-top: 40px;
+			@include sticks;
+			&::after,&::before {
+				margin-top: 1%;
+			}
+		}
+		// логин и пароль
+		&__login,&__pass{
+			padding: 10px 20px;
+			width: 296px;
+			height: 45px;
+			margin: 0 auto 20px 60px;
+			border: 0;
+			border-top-right-radius: $user-block__radius;
+			border-bottom-right-radius: $user-block__radius;
+			&:focus {
+				border: 2px solid $greenColor;
+				outline: 0;
+			}
+			&-label {
+				display: block;
+				content:"";
+				height: 45px;
+				width: 45px;
+				background: #eee;
+				margin: 0;
+				position: absolute;
+				left: 15px;
+				border-top-left-radius: $user-block__radius;
+				border-bottom-left-radius: $user-block__radius;
+			}
+		}
+		// Чекбокс
+		&__check {
+			position: relative;
+			margin-right: 5px;
+			&-label {
+				vertical-align: middle;
+			}
+			&-block {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			&::before, &::after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				content: "";
+				width: 20px;
+				height: 20px;
+				background: #fff;
+				transform: translateX(-8px);
+			}
+			&::after {
+				display: none;
+				background: $greenColor;
+			}
+			&:checked::after {
+				display: block;
+			}
+		}
+		// вопрос "Вы точно человек?"
+		&__q {
+			display: block;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		// Радио кнопки
+		&__radio {
+			position: relative;
+			margin-right: 5px;
+			&-block {
+				width: 100%;
+				text-align: center;
+			}
+			&-label[for="radio1"] {
+				margin-right: 30px;
+			}
+			&::before, &::after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				content: "";
+				width: 18px;
+				height: 18px;
+				border: 1px solid #eee;
+				background: #fff;
+				transform: translate(-7px, -2px);
+				border-radius: 50%;
+			}
+			&::after {
+				display: none;
+				width: 12px;
+				height: 12px;
+				background: $greenColor;
+				border: 0;
+				transform: translate(-3px, 2px);
+			}
+			&:checked::after{
+				display: block;
+			}
+		}
+		// кнопки входа и "на главную"
+		&__btn, &__link  {
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			background: $lightColor;
+			opacity: 0.8;
+			transition: 0.5s else;
+			display: block;
+			cursor: pointer;
+			padding: 15px 33px;
+			width: 50%;
+			outline: 0;
+			border: 0;
+			color: #FFF;
+			&:hover {
+				background: $greenColor;
+				opacity: 0.8;
+			}
+		}
+		&__link {
+			left: 0;
+			border-right: 2px solid #74b9b6;
+			text-align: center;
+		}
+	}
+	// для текста при выбранной радио кнопке
+	#radio1:checked + label[for="radio1"] {
+		color: $lightColor;
+	}
+	#radio2:checked + label[for="radio2"] {
+		color: $lightColor;
+	}
+}

@@ -1,0 +1,33 @@
+// страница works
+
+.works {
+	@import '../common/_style';
+	@import '../common/_vars';
+	@import '../common/modules/_welcome__bg';
+	@import '../common/modules/_user-block';
+	@import '../common/modules/_header';
+	@import '../common/modules/_footer';
+
+	// для треугольников 
+
+	.welcome__bg {
+		&::before {
+			background-image: linear-gradient(189deg, transparent 50%, #fff 50%);
+		}
+		&::after {
+			background-image: linear-gradient(171deg, transparent 50%, #fff 50%);
+		}
+	}
+
+	// для заголовка МОИ РАБОТЫ
+
+	.works__title {
+		&-block {
+			padding: 70px 0;
+		}
+		@include sticks;
+		&::before,&::after {
+			margin-top: 0;
+		}
+	}
+}

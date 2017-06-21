@@ -17,13 +17,13 @@ html
     //- favicon block end
 
     link(rel='stylesheet' href='app/css/foundation.css')
-    link(rel='stylesheet' href='' + url_css)
+    link(rel='stylesheet' href='app/css/main.css')
     script(src='app/js/foundation.js' defer)
-    script(src="" + url_js defer)
+    script(src="app/js/app.js" defer)
 
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     <![endif]-->
 
-  body
+  body(class="" + page_class)
     block content
