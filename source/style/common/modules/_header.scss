@@ -27,7 +27,18 @@
 		justify-content: center;
 		margin-bottom: 40px;
 		span {
-			margin: 0 10px;
+			margin: 0 30px;
+			a {
+				font-size: 0;
+				i {
+					font-size: 25px;
+					color: rgba(255,255,255,0.5);
+					transition: $trs_time all;
+					&:hover {
+						color: rgba(255,255,255,1);
+					}
+				}
+			}
 		}
 	}
 	&__menu {

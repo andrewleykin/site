@@ -20,6 +20,7 @@
 		line-height: 34px;
 		color: $greyColor;
 		margin-bottom: 10px;
+		font-family: $mediumFont;
 	}
 	&__desc {
 		color: $greyColor;
@@ -31,7 +32,18 @@
 		justify-content: center;
 		margin-bottom: 40px;
 		span {
-			margin: 0 10px;
+			margin: 0 30px;
+			a {
+				font-size: 0;
+				i {
+					font-size: 25px;
+					color: $lightColor;
+					transition: $trs_time all;
+					&:hover {
+						color: $greenColor;
+					}
+				}
+			}
 		}
 	}
 	&__bottom {
@@ -50,7 +62,7 @@
 	&__item {
 		display: inline-block;
 		background: $lightColor;
-		transition: 0.5s else;
+		transition: $trs_time else;
 		&:first-child {
 		border-bottom-left-radius: $user-block__radius;
 		}
@@ -64,7 +76,8 @@
 	&__link {
 		display: block;
 		cursor: pointer;
-		padding: 15px 33px;
+		padding: 15px 30px;
 		color: #FFF;
+		font-family: $mediumFont;
 	}
 }

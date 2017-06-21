@@ -1,6 +1,12 @@
 // страница index
 
 .index {
+	@import '../common/_style';
+	@import '../common/_vars';
+	@import '../common/modules/_welcome__bg';
+	@import '../common/modules/_user-block';
+	@import '../common/modules/_footer';
+
 	// кнопка авторизоваться
 	.welcome__btn-auto {
 		align-self: flex-end;
@@ -15,6 +21,8 @@
 			border: 2px solid white;
 			border-radius: 5px;
 			background: transparent;
+			transition: $trs_time all;
+			font-family: $mediumFont;
 			&:hover {
 				background: #fff;
 				color: #00BFA5;
@@ -26,13 +34,7 @@
 	.welcome__desc {
 		color: #FFF;
 		align-self: center;
+		opacity: 0.5;
+		font-family: $lightFont;
 	}
 }
-
-
-
-@import '../common/_style';
-@import '../common/_vars';
-@import '../common/modules/_welcome__bg';
-@import '../common/modules/_user-block';
-@import '../common/modules/_footer';

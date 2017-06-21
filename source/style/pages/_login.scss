@@ -19,6 +19,7 @@
 		// заголовок
 		&__title {
 			margin-top: 40px;
+			font-family: $titleFont;
 			@include sticks;
 			&::after,&::before {
 				margin-top: 1%;
@@ -33,6 +34,8 @@
 			border: 0;
 			border-top-right-radius: $user-block__radius;
 			border-bottom-right-radius: $user-block__radius;
+			color: rgba(55,62,66,0.5);
+			font-family: $regularFont;
 			&:focus {
 				border: 2px solid $greenColor;
 				outline: 0;
@@ -48,6 +51,13 @@
 				left: 15px;
 				border-top-left-radius: $user-block__radius;
 				border-bottom-left-radius: $user-block__radius;
+				padding: 13px;
+				padding-left: 15px;
+				i {
+					display: block;
+					font-size: 20px;
+					color: #C4CBCD;
+				}
 			}
 		}
 		// Чекбокс
@@ -56,6 +66,15 @@
 			margin-right: 5px;
 			&-label {
 				vertical-align: middle;
+				font-family: $regularFont;
+				position: relative;
+				.fa-check {
+					position: absolute;
+					z-index: 5;
+					left: -27px;
+					top: 2px;
+					color: #FFF;
+				}
 			}
 			&-block {
 				width: 100%;
@@ -71,7 +90,7 @@
 				width: 20px;
 				height: 20px;
 				background: #fff;
-				transform: translateX(-8px);
+				transform: translateX(-7px);
 			}
 			&::after {
 				display: none;
@@ -86,6 +105,7 @@
 			display: block;
 			text-align: center;
 			margin-bottom: 15px;
+			font-family: $boldFont;
 		}
 		// Радио кнопки
 		&__radio {
@@ -94,6 +114,9 @@
 			&-block {
 				width: 100%;
 				text-align: center;
+			}
+			&-label {
+				font-family: $regularFont;
 			}
 			&-label[for="radio1"] {
 				margin-right: 30px;
@@ -130,7 +153,7 @@
 			position: absolute;
 			background: $lightColor;
 			opacity: 0.8;
-			transition: 0.5s else;
+			transition: $trs_time else;
 			display: block;
 			cursor: pointer;
 			padding: 15px 33px;
@@ -138,6 +161,7 @@
 			outline: 0;
 			border: 0;
 			color: #FFF;
+			font-family: $mediumFont;
 			&:hover {
 				background: $greenColor;
 				opacity: 0.8;

@@ -31,6 +31,7 @@
 			color: #FFF;
 			@include sticks;
 			text-transform: uppercase;
+			font-family: $titleFont;
 		}
 	}
 
@@ -64,6 +65,7 @@
 			&-active {
 				color: #00bfa5;
 				position: relative;
+				font-family: $boldFont;
 				&::after {
 					content:"";
 					display: block;
@@ -99,6 +101,7 @@
 		&__title {
 			display: block;
 			margin-bottom: 30px;
+			font-family: $titleFont;
 		}
 		&__data {
 			display: block;

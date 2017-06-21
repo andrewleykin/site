@@ -1,5 +1,12 @@
 // Переменные
 
+// Шрифты
+
+$regularFont: "RobotoRegular", sans-serif;
+$lightFont: "RobotoLight", sans-serif;
+$mediumFont: "RobotoMedium", sans-serif;
+$boldFont: "RobotoBold", sans-serif;
+$titleFont: "Bernier", Arial, sans-serif;
 
 // цвета
 
@@ -10,3 +17,6 @@ $lightColor: #00bfa5;
 
 // радиус, для главной страницы и авторизации
 $user-block__radius: 5px;
+
+// время для анимаций при наведении
+$trs_time: 0.5s;
