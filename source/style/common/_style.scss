@@ -7,10 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-// для футера
 html,body {
 	height: 100%;
+	width: 100%;
+}
+// для footer
+main {
+	flex: 1 0 auto;
 }
 
 ul {
@@ -21,7 +24,11 @@ a {
 	text-decoration: none;
 	color: black;
 }
-
+.container-1800 {
+	width: 1800px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 
 .container-1200 {
 	width: 1200px;

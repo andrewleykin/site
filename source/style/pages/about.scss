@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-	width: 100vw;
+	width: 100%;
 	margin-bottom: 45px;
 	@include flex(row, space-around, flex-start);
 	margin: 0 auto;
@@ -21,7 +21,7 @@ body {
 .about-me {
 	width: 48%;
 	@include flex(column, center, center);
-	text-align: center;
+	text-align: right;
 	&__title {
 		@include sticks;
 		&-min {
@@ -32,7 +32,7 @@ body {
 		margin-bottom: 40px;
 	}
 	&__desc {
-		width: 61%;
+		width: 79%;
 		margin: 0 auto 40px;
 		p {
 			margin-bottom: 10px;
@@ -54,12 +54,12 @@ body {
 		}
 	}
 	&__desc {
-		width: 63%;
+		width: 85%;
 		color: $greyColor;
 		margin-bottom: 65px;
 	}
 	&__name {
-		width: 63%;
+		width: 85%;
 		margin: 0 auto 20px;
 		display: block;
 		color: $greyColor;
@@ -68,13 +68,14 @@ body {
 		align-self: flex-start;
 	}
 	&__items {
+		width: 85%;
 		margin-bottom: 45px;
 	}
 }
 // Блок карты
 .map {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background: url("../img/map__bg.jpg") no-repeat center center;
 	background-size: cover;
 	@include flex(row, center, center);
