@@ -30,5 +30,239 @@
 			margin-top: 0;
 		}
 	}
-	
+	// Стили для слайдера
+	.slider {
+		background: #f0efe9;
+		min-height: 750px;
+		@include flex(row, center, center);
+		margin-bottom: 70px;
+		&-left {
+			width: 50%;
+			&__info {
+				display: block;
+				width: 420px;
+				margin: 0 auto;
+			}
+		}
+		&-right {
+			width: 50%;
+			@include flex(column, flex-start, center);
+		}
+		// стили для левого блока в слайдере
+		&__title {
+			@include sticks;
+			color: $greyColor;
+			text-align: center;
+			&::after,&::before {
+				margin-top: -10%;
+			}
+		}
+		&__tools {
+			color: #20B5A1;
+			text-transform: uppercase;
+			text-align: center;
+			&-block {
+				margin: 0 auto;
+				margin-bottom: 40px;
+				border-top: 1px solid #acd6ce;
+				border-bottom: 1px solid #acd6ce;
+				padding: 20px;
+			}
+		}
+		&__link {
+			color: white;
+			padding: 15px 20px;
+			background: $lightColor;
+			border-radius: $user-block__radius;
+			cursor: pointer;
+			transition: $trs_time all;
+			&:hover {
+				background: $greenColor;
+			}
+			i {
+				margin-right: 15px;
+				color: #FFF;
+				font-size: 20px;
+			}
+			&-block {
+				width: 200px;
+				margin: 0 auto;
+			}
+		}
+		// стили для правого блока в слайдере
+		&__display {
+			height: 525px;
+			width: 100%;
+			@include flex(row, center, center);
+			img {
+				display: block;
+				margin: auto;
+			}
+		}
+		&__controls {
+			@include flex(row,center,center);
+			width: 100%;
+		}
+		&__prev, &__next {
+			width: 50%;
+			height: 225px;
+			display: flex;
+			background: #e3ddd0;
+			transition: all $trs_time;
+			color: rgba(255,255,255,0.5);
+			&:hover {
+				background: darken(#e3ddd0, 20%);
+				color: rgba(255,255,255,1);
+			}
+			i {
+				cursor: pointer;
+				margin: auto;
+				font-size: 35px;
+				transition: $trs_time all;
+			}
+		}
+	}
+	// стили для блока feedback
+	.feedback {
+		width: 100%;
+		min-height: 1140px;
+		background: url(../img/works__feedback__bg.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 40px;
+		&__title {
+			text-align: center;
+			@include sticks;
+			&::before,&::after {
+				margin-top: -15%;
+			}
+			&-block {
+				width: 450px;
+				margin: 0 auto;
+			}
+		}
+		&__arrow-up {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			i {
+				font-size: 25px;
+				color: #fff;
+				opacity: 0.5;
+				transition: $trs_time all;
+				cursor: pointer;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	// стили для блока comment-отзывы в блоке feedback
+	.comment {
+		width: 820px;
+		margin: 0 auto;
+		padding: 20px;
+		margin-bottom: 70px;
+		@include flex(row, space-between, center);
+		&__item {
+			@include flex(column,space-between,flex-start);
+		}
+		&__icon {
+			margin-bottom: 25px;
+			i.fa {
+				color: $darkColor;
+				opacity: 0.2;
+				font-size: 30px;
+			}
+		}
+		&__desc {
+			color: $greyColor;
+			line-height: 26px;
+			width: 85%;
+			margin-bottom: 25px;
+		}
+		&__user {
+			@include flex(row,flex-start,center);
+			width: 100%;
+		}
+		&__photo {
+			margin-right: 20px;
+		}
+		&__name {
+			display: block;
+			color: #20B5A1;
+			font-family: $boldFont;
+			margin-bottom: 10px;
+		}
+		&__info {
+			color: #20B5A1;
+			display: block;
+		}
+	}
+	// стили для блока обратной связи
+	.feedback-form {
+		width: 100%;
+		&-block {
+			width: 380px;
+			margin: 0 auto;
+			padding-top: 40px;
+			text-align: center;
+			margin-bottom: 70px;
+		}
+		&__title {
+			@include sticks;
+			color: $greyColor;
+			&::before,&::after {
+				margin: 0 8px;
+			}
+		}
+		&__name,&__email,&__message {
+			margin-bottom: 20px;
+			width: 90%;
+			padding: 15px 20px;
+			color: rgba(55,62,66,0.5);
+			border-radius: $user-block__radius;
+			outline: 0;
+			border: 0;
+			transition: $trs_time all;
+			&:focus {
+				border: 1px solid $greenColor;
+				outline: 0;
+			}
+		}
+		&__message {
+			height: 140px;
+		}
+		// кнопки отправить и очистить
+		&__bottom {
+			width: 100%;
+			@include flex(row,space-between,center);
+			background: rgba(255,255,255,.7);
+			border-radius: $user-block__radius;
+		}
+		&__submit, &__reset  {
+			display: inline-block;
+			background: $lightColor;
+			opacity: 0.8;
+			transition: $trs_time all;
+			cursor: pointer;
+			padding: 15px 33px;
+			width: 50%;
+			outline: 0;
+			border: 0;
+			color: #FFF;
+			font-family: $mediumFont;
+			&:hover {
+				background: $greenColor;
+				opacity: 0.8;
+			}
+		}
+		&__reset {
+			border-bottom-right-radius: $user-block__radius;
+		}
+		&__submit {
+			border-right: 2px solid #74b9b6;
+			border-bottom-left-radius: $user-block__radius;
+		}
+	}
 }

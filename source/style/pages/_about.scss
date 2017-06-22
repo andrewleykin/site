@@ -75,7 +75,7 @@
 	}
 	// Блок карты
 	.map {
-		height: 100vh;
+		min-height: 830px;
 		width: 100%;
 		background: url("../img/map__bg.jpg") no-repeat center center;
 		background-size: cover;
@@ -88,7 +88,6 @@
 		border-radius: 5px;
 		color: $greyColor;
 		@include flex(column, center, flex-start);
-		margin-top: -10%;
 		span {
 			margin-bottom: 25px;
 			padding-left: 80px;
