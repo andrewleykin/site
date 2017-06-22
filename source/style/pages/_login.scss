@@ -19,7 +19,6 @@
 		// заголовок
 		&__title {
 			margin-top: 40px;
-			font-family: $titleFont;
 			@include sticks;
 			&::after,&::before {
 				margin-top: 1%;
@@ -167,10 +166,14 @@
 				opacity: 0.8;
 			}
 		}
+		&__btn {
+			border-bottom-right-radius: $user-block__radius;
+		}
 		&__link {
 			left: 0;
 			border-right: 2px solid #74b9b6;
 			text-align: center;
+			border-bottom-left-radius: $user-block__radius;
 		}
 	}
 	// для текста при выбранной радио кнопке

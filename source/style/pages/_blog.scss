@@ -31,7 +31,6 @@
 			color: #FFF;
 			@include sticks;
 			text-transform: uppercase;
-			font-family: $titleFont;
 		}
 	}
 
@@ -101,7 +100,6 @@
 		&__title {
 			display: block;
 			margin-bottom: 30px;
-			font-family: $titleFont;
 		}
 		&__data {
 			display: block;

@@ -1,0 +1,50 @@
+.feedback__title-block
+  .feedback__title.title-big Что обо мне говорят
+.feedback
+  .comment
+    .comment__item
+      .comment__icon
+      .comment__desc
+        p. 
+          Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+      .comment__user
+        .comment__photo
+          img(src="app/img/comment__photo1.png")
+        .comment__name Дмитрий Ковальчук
+        .comment__info Основатель LoftSchool
+    .comment__item
+      .comment__icon
+      .comment__desc
+        p. 
+          Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+      .comment__user
+        .comment__photo
+          img(src="app/img/comment__photo2.png")
+        .comment__name Владимир Сабанцев
+        .comment__info Преподователь LoftSchool
+  .feedback-form-block
+    span.feedback-form__title.title-min Связатьяс со мной
+    form(action="#").feedback-form
+      input.feedback-form__name(
+      type="text"
+      placeholder="Имя"
+      )
+      input.feedback-form__email(
+      type="email"
+      placeholder="Email"
+      )
+      textarea.feedback-form__message(
+      placeholder="Введите сообщение"
+      )
+      input.feedback-form__submit(
+      type="submit"
+      value="Отправить"
+      )
+      input.feedback-form__reset(
+      type="reset"
+      value="Очистить"
+      )
+  .feedback__arrow-up
+    i.fa.fa-chevron-up
+
+

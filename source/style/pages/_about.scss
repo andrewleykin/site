@@ -20,13 +20,11 @@
 		@include flex(column, center, center);
 		text-align: right;
 		&__title {
-			font-family: $titleFont;
 			@include sticks;
 			&::before,&::after {
 				margin-top: 0;
 			}
 			&-min {
-				font-family: $titleFont;
 				@include sticks;
 			}
 		}
@@ -51,7 +49,6 @@
 			@include sticks;
 			text-align: center;
 			margin-bottom: 30px;
-			font-family: $titleFont;
 			&::before,&::after {
 				margin-top: -10%;
 			}
@@ -97,7 +94,6 @@
 			padding-left: 80px;
 		}
 		&__title {
-			font-family: $titleFont;
 			text-align: center;
 			color: $darkColor;
 			margin: 35px auto 45px;
