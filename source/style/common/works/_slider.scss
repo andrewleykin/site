@@ -1,0 +1,94 @@
+// Стили для слайдера
+
+.slider {
+	background: #f0efe9;
+	min-height: 750px;
+	@include flex(row, center, center);
+	margin-bottom: 70px;
+	&-left {
+		width: 50%;
+		&__info {
+			display: block;
+			width: 420px;
+			margin: 0 auto;
+		}
+	}
+	&-right {
+		width: 50%;
+		@include flex(column, flex-start, center);
+	}
+	// стили для левого блока в слайдере
+	&__title {
+		@include sticks;
+		color: $greyColor;
+		text-align: center;
+		&::after,&::before {
+			margin-top: -10%;
+		}
+	}
+	&__tools {
+		color: #20B5A1;
+		text-transform: uppercase;
+		text-align: center;
+		&-block {
+			margin: 0 auto;
+			margin-bottom: 40px;
+			border-top: 1px solid #acd6ce;
+			border-bottom: 1px solid #acd6ce;
+			padding: 20px;
+		}
+	}
+	&__link {
+		color: white;
+		padding: 15px;
+		background: $lightColor;
+		border-radius: $user-block__radius;
+		cursor: pointer;
+		transition: $trs_time all;
+		&:hover {
+			background: $greenColor;
+		}
+		i {
+			margin-right: 15px;
+			color: #FFF;
+			font-size: 20px;
+		}
+		&-block {
+			width: 200px;
+			margin: 0 auto;
+		}
+	}
+	// стили для правого блока в слайдере
+	&__display {
+		height: 525px;
+		width: 100%;
+		@include flex(row, center, center);
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	&__controls {
+		@include flex(row,center,center);
+		width: 100%;
+	}
+	&__prev, &__next {
+		width: 50%;
+		height: 225px;
+		display: flex;
+		background: #e3ddd0;
+		transition: all $trs_time;
+		color: rgba(255,255,255,0.5);
+		cursor: pointer;
+		&:hover {
+			background: darken(#e3ddd0, 20%);
+			color: rgba(255,255,255,1);
+		}
+		i {
+			cursor: pointer;
+			margin: auto;
+			font-size: 35px;
+			transition: $trs_time all;
+		}
+	}
+}

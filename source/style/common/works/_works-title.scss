@@ -1,0 +1,11 @@
+// для заголовка МОИ РАБОТЫ
+
+.works__title {
+	&-block {
+		padding: 70px 0;
+	}
+	@include sticks;
+	&::before,&::after {
+		margin-top: 0;
+	}
+}

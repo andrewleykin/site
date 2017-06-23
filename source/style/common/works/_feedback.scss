@@ -1,0 +1,36 @@
+// стили для блока feedback
+
+.feedback {
+	width: 100%;
+	min-height: 1140px;
+	background: url(../img/works__feedback__bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 40px;
+	&__title {
+		text-align: center;
+		@include sticks;
+		&::before,&::after {
+			margin-top: -15%;
+		}
+		&-block {
+			width: 450px;
+			margin: 0 auto;
+		}
+	}
+	&__arrow-up {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		i {
+			font-size: 25px;
+			color: #fff;
+			opacity: 0.5;
+			transition: $trs_time all;
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

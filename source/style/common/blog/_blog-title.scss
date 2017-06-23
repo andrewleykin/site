@@ -1,0 +1,25 @@
+// для названия страницы
+
+.user-block {
+	&__name {
+		opacity: 0;
+	}
+	&__desc {
+		opacity: 0;
+	}
+}
+.blog-title {
+	display: block;
+	position: absolute;
+	top: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFF;
+	&__title {
+		display: block;
+		margin-bottom: 0;
+		color: #FFF;
+		@include sticks;
+		text-transform: uppercase;
+	}
+}

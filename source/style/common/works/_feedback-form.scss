@@ -1,0 +1,67 @@
+// стили для блока обратной связи
+
+.feedback-form {
+	width: 100%;
+	&-block {
+		width: 380px;
+		margin: 0 auto;
+		padding-top: 40px;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__title {
+		@include sticks;
+		color: $greyColor;
+		&::before,&::after {
+			margin: 0 8px;
+		}
+	}
+	&__name,&__email,&__message {
+		margin-bottom: 20px;
+		width: 90%;
+		padding: 15px 20px;
+		color: rgba(55,62,66,0.5);
+		border-radius: $user-block__radius;
+		outline: 0;
+		border: 0;
+		transition: $trs_time all;
+		&:focus {
+			border: 1px solid $greenColor;
+			outline: 0;
+		}
+	}
+	&__message {
+		height: 140px;
+	}
+	// кнопки отправить и очистить
+	&__bottom {
+		width: 100%;
+		@include flex(row,space-between,center);
+		background: rgba(255,255,255,.7);
+		border-radius: $user-block__radius;
+	}
+	&__submit, &__reset  {
+		display: inline-block;
+		background: $lightColor;
+		opacity: 0.8;
+		transition: $trs_time all;
+		cursor: pointer;
+		padding: 15px 33px;
+		width: 50%;
+		outline: 0;
+		border: 0;
+		color: #FFF;
+		font-family: $mediumFont;
+		&:hover {
+			background: $greenColor;
+			opacity: 0.8;
+		}
+	}
+	&__reset {
+		border-bottom-right-radius: $user-block__radius;
+	}
+	&__submit {
+		border-right: 2px solid #74b9b6;
+		border-bottom-left-radius: $user-block__radius;
+	}
+}

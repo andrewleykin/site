@@ -1,0 +1,43 @@
+// стили для блока comment-отзывы в блоке feedback
+
+.comment {
+	width: 820px;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 70px;
+	@include flex(row, space-between, center);
+	&__item {
+		@include flex(column,space-between,flex-start);
+	}
+	&__icon {
+		margin-bottom: 25px;
+		i.fa {
+			color: $darkColor;
+			opacity: 0.2;
+			font-size: 30px;
+		}
+	}
+	&__desc {
+		color: $greyColor;
+		line-height: 26px;
+		width: 85%;
+		margin-bottom: 25px;
+	}
+	&__user {
+		@include flex(row,flex-start,center);
+		width: 100%;
+	}
+	&__photo {
+		margin-right: 20px;
+	}
+	&__name {
+		display: block;
+		color: #20B5A1;
+		font-family: $boldFont;
+		margin-bottom: 10px;
+	}
+	&__info {
+		color: #20B5A1;
+		display: block;
+	}
+}

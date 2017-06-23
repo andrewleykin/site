@@ -1,0 +1,30 @@
+// Блок сайдбар слева
+
+.sidebar {
+	width: 31%;
+	text-align: right;
+	padding-right: 100px;
+	&__item {
+		margin-bottom: 40px;
+		cursor: pointer;
+	}
+	&__link {
+		color: $greyColor;
+		&-active {
+			color: #00bfa5;
+			position: relative;
+			font-family: $boldFont;
+			&::after {
+				content:"";
+				display: block;
+				width: 3px;
+				height: 40px;
+				background: #00BFA5;
+				position: absolute;
+				right: -20px;
+				top: -8px;
+				
+			}
+		}
+	}
+}

@@ -1,15 +1,17 @@
 // страница about
 
 .about {
+
 	//переиспользуемые стили
-	
 	@import '../common/modules/_welcome__bg';
 	@import '../common/modules/_user-block';
 	@import '../common/modules/_header';
 	@import '../common/modules/_footer';
-	
+
+
 	//cтиль для всей страницы
 	background: #EFEEE9;
+
 
 	// Стили блоков страницы about
 

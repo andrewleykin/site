@@ -1,0 +1,23 @@
+// кнопка авторизоваться
+
+.btn-autho {
+	align-self: flex-end;
+	cursor: pointer;
+	background: transparent;
+	outline: 0;
+	border: 0;
+	&__link {
+		display: block;
+		padding: 15px 30px;
+		color: #FFF;
+		border: 2px solid white;
+		border-radius: 5px;
+		background: transparent;
+		transition: $trs_time all;
+		font-family: $mediumFont;
+		&:hover {
+			background: #fff;
+			color: #00BFA5;
+		}
+	}
+}

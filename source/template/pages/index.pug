@@ -1,3 +1,5 @@
+//- страница index
+
 extends ../_template
 
 block variables
@@ -6,8 +8,8 @@ block variables
 
 block content
   section.welcome__bg
-    button.welcome__btn-auto 
-      a(href="login.html") Авторизоваться
+    button.btn-autho
+      a(href="login.html").btn-autho__link Авторизоваться
     div.user-block
       div.user-block__top
         div.user-block__photo
@@ -36,5 +38,5 @@ block content
               a.user-block__link(href="about.html") Обо   мне
             li.user-block__item
               a.user-block__link(href="blog.html") Блог
-    span.welcome__desc © Лейкин Андрей | создано с любовью в LoftSchool | 2017
+    span.footer-desc © Лейкин Андрей | создано с любовью в LoftSchool | 2017
 

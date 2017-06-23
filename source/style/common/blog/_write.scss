@@ -1,0 +1,29 @@
+// блок для записей
+
+.write {
+	width: 65%;
+	&__item {
+		width: 87%;
+		margin-bottom: 70px;
+		border-bottom: 5px solid #F1F1F2;
+		padding-bottom: 70px;
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+		p {
+			color: $greyColor;
+			margin-bottom: 30px;
+			line-height: 26px;
+		}
+	}
+	&__title {
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__data {
+		display: block;
+		color: #00BFA5;
+		margin-bottom: 35px;
+	}
+}

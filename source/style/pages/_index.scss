@@ -1,39 +1,18 @@
 // страница index
 
 .index {
+
 	//переиспользуемые стили
-	
 	@import '../common/modules/_welcome__bg';
 	@import '../common/modules/_user-block';
 
+
+	// Стили блоков страницы blog
+
+
 	// кнопка авторизоваться
-	.welcome__btn-auto {
-		align-self: flex-end;
-		cursor: pointer;
-		background: transparent;
-		outline: 0;
-		border: 0;
-		a {
-			display: block;
-			padding: 15px 30px;
-			color: #FFF;
-			border: 2px solid white;
-			border-radius: 5px;
-			background: transparent;
-			transition: $trs_time all;
-			font-family: $mediumFont;
-			&:hover {
-				background: #fff;
-				color: #00BFA5;
-			}
-		}
-	}
+	@import '../common/index/_btn-autho';
 
 	// описание в футере
-	.welcome__desc {
-		color: #FFF;
-		align-self: center;
-		opacity: 0.5;
-		font-family: $lightFont;
-	}
+	@import '../common/index/_footer-desc';
 }

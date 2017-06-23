@@ -1,0 +1,11 @@
+// для белых треугольников и отступа
+
+.welcome__bg {
+	margin-bottom: 70px;
+	&::before {
+		background-image: linear-gradient(189deg, transparent 50%, #fff 50%);
+	}
+	&::after {
+		background-image: linear-gradient(171deg, transparent 50%, #fff 50%);
+	}
+}

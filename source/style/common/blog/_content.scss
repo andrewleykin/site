@@ -1,0 +1,5 @@
+// для блока контента
+
+.content {
+	@include flex(row,space-between,flex-start);
+}
