@@ -2,6 +2,10 @@
 
 .works__title {
 	&-block {
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
 		padding: 70px 0;
 	}
 	@include sticks;

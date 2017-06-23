@@ -1,31 +1,30 @@
 // страница works
 
-.works {
-	//переиспользуемые стили
-	
-	@import '../common/modules/_welcome__bg';
-	@import '../common/modules/_user-block';
-	@import '../common/modules/_header';
-	@import '../common/modules/_footer';
-	@import '../common/modules/_triangle__white';
-	
+
+//переиспользуемые стили
+
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
+@import '../common/modules/_header';
+@import '../common/modules/_footer';
+// @import '../common/modules/_triangle__white';
+@import '../common/modules/_triangle';
 
 
-	// Стили блоков страницы blog
+// Стили блоков страницы blog
 
 
-	// для заголовка МОИ РАБОТЫ
-	@import '../common/works/_works-title';
-	
-	// Стили для слайдера
-	@import '../common/works/_slider';
-	
-	// стили для блока feedback
-	@import '../common/works/_feedback';
-	
-	// стили для блока comment-отзывы в блоке feedback
-	@import '../common/works/_comment';
-	
-	// стили для блока обратной связи
-	@import '../common/works/_feedback-form';
-}
+// для заголовка МОИ РАБОТЫ
+@import '../common/works/_works-title';
+
+// Стили для слайдера
+@import '../common/works/_slider';
+
+// стили для блока feedback
+@import '../common/works/_feedback';
+
+// стили для блока comment-отзывы в блоке feedback
+@import '../common/works/_comment';
+
+// стили для блока обратной связи
+@import '../common/works/_feedback-form';

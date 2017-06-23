@@ -1,25 +1,29 @@
 // для названия страницы
 
-.user-block {
-	&__name {
-		opacity: 0;
-	}
-	&__desc {
-		opacity: 0;
-	}
+.user-block__name__hide {
+	opacity: 0;
 }
+.user-block__desc__hide {
+	opacity: 0;
+}
+
 .blog-title {
 	display: block;
 	position: absolute;
-	top: 60%;
+	top: 100%;
 	margin: 0 auto;
 	text-align: center;
 	color: #FFF;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 	&__title {
-		display: block;
 		margin-bottom: 0;
 		color: #FFF;
 		@include sticks;
 		text-transform: uppercase;
+		&::after,&::before {
+			margin-top: 0;
+		}
 	}
 }

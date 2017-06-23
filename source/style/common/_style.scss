@@ -21,7 +21,13 @@ a {
 	text-decoration: none;
 	color: black;
 }
-
+.wrapper {
+	position: relative;
+	background: $beigeColor;
+}
+.wrapper__bg__white {
+	background: $whiteColor;
+}
 // для footer
 main {
 	flex: 1 0 auto;

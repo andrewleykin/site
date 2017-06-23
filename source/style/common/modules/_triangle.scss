@@ -1,0 +1,23 @@
+// Стили для треугольников
+
+.triangle {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+}
+
+.triangle__left {
+	fill: white;
+}
+
+.triangle__right {
+	fill: white;
+}
+
+.triangle__left__color__grey {
+	fill: #efeee9;
+}
+
+.triangle__right__color__grey  {
+	fill: #efeee9;
+}

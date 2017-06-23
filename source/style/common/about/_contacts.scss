@@ -20,9 +20,10 @@
 			opacity: 1;
 		}
 	}
-	&__item {
+	&__item, &__link {
 		color: rgba(69,90,100,0.8);
 		font-family: $mediumFont;
+		
 		i {
 			margin-right: 10px;
 			font-size: 25px;

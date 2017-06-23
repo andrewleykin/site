@@ -1,14 +1,12 @@
 // страница login
 
-.login {
 
-	//переиспользуемые стили
-	@import '../common/modules/_welcome__bg';
-
-
-	// Стили блоков страницы blog
+//переиспользуемые стили
+@import '../common/modules/_welcome__bg';
 
 
-	// форма входа
-	@import '../common/login/login';
-}
+// Стили блоков страницы blog
+
+
+// форма входа
+@import '../common/login/login';

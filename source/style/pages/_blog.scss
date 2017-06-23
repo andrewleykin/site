@@ -1,27 +1,25 @@
 // страница blog
 
-.blog {
 
-	//переиспользуемые стили
-	@import '../common/modules/_welcome__bg';
-	@import '../common/modules/_user-block';
-	@import '../common/modules/_header';
-	@import '../common/modules/_footer';
-	@import '../common/modules/_triangle__white';
-
-
-	// Стили блоков страницы blog
+//переиспользуемые стили
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
+@import '../common/modules/_header';
+@import '../common/modules/_footer';
+@import '../common/modules/_triangle';
 
 
-	// для названия страницы
-	@import '../common/blog/_blog-title';
-	
-	// для блока контента
-	@import '../common/blog/_content';
-	
-	// Блок сайдбар слева
-	@import '../common/blog/_sidebar';
-	
-	// блок для записей
-	@import '../common/blog/_write';
-}
+// Стили блоков страницы blog
+
+
+// для названия страницы
+@import '../common/blog/_blog-title';
+
+// для блока контента
+@import '../common/blog/_content';
+
+// Блок сайдбар слева
+@import '../common/blog/_sidebar';
+
+// блок для записей
+@import '../common/blog/_write';

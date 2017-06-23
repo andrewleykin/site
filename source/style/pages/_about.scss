@@ -1,39 +1,34 @@
 // страница about
 
-.about {
-
-	//переиспользуемые стили
-	@import '../common/modules/_welcome__bg';
-	@import '../common/modules/_user-block';
-	@import '../common/modules/_header';
-	@import '../common/modules/_footer';
-
-
-	//cтиль для всей страницы
-	background: #EFEEE9;
+//переиспользуемые стили
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
+@import '../common/modules/_header';
+@import '../common/modules/_footer';
+@import '../common/modules/_triangle';
 
 
-	// Стили блоков страницы about
+// Стили блоков страницы about
 
 
-	// Основные стили, и блок контент
-	@import '../common/about/_about__style';
-	
-	// Блок ОБО МНЕ
-	@import '../common/about/_about-me';
-	
-	// Блок скилов
-	@import '../common/about/_skills';
-	
-	// Круги в скиллах
-	@import '../common/about/_circles';
-	
-	// Эффекты при ховере
-	@import '../common/about/_circles__hover';
-	
-	// Блок карты
-	@import '../common/about/map';
-	
-	// блок контакты в карте
-	@import '../common/about/contacts';
-}
+// Основные стили, и блок контент
+@import '../common/about/_about__style';
+
+// Блок ОБО МНЕ
+@import '../common/about/_about-me';
+
+// Блок скилов
+@import '../common/about/_skills';
+
+// Круги в скиллах
+@import '../common/about/_circles';
+
+// Эффекты при ховере
+@import '../common/about/_circles__hover';
+
+// Блок карты
+@import '../common/about/map';
+
+// блок контакты в карте
+@import '../common/about/contacts';
+

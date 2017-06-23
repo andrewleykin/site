@@ -1,8 +1,10 @@
 // Основные стили, и блок контент
 
+
 .content {
 	width: 100%;
 	margin-bottom: 45px;
 	@include flex(row, space-around, flex-start);
 	margin: 0 auto;
+	position: relative;
 }

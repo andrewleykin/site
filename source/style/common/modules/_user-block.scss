@@ -1,7 +1,7 @@
 // стили user-block
 
 .user-block {
-	background: rgba(252,252,252,.85);
+	background: transparent;
 	margin: auto;
 	width: 380px;
 	margin-bottom: 100px;
@@ -10,20 +10,28 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		position: relative;
 	}
 	&__photo {
+		content: "";
 		margin: 25px 0;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: url(../img/user-block__photo2.jpg);
+		background-position: top;
+		background-size: cover;
 	}
 	&__name {
 		display: block;
 		font-size: 28px;
 		line-height: 34px;
-		color: $greyColor;
+		color: $whiteColor;
 		margin-bottom: 10px;
 		font-family: $mediumFont;
 	}
 	&__desc {
-		color: $greyColor;
+		color: $whiteColor;
 		opacity: 0.8;
 		margin-bottom: 35px;
 	}
@@ -80,4 +88,14 @@
 		color: #FFF;
 		font-family: $mediumFont;
 	}
+}
+
+.user-block__bg__white {
+	background: rgba(252,252,252,.85);
+}
+.user-block__name__color__grey {
+	color: $greyColor;
+}
+.user-block__desc__color__grey {
+	color: $greyColor;
 }

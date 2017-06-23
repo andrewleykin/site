@@ -1,18 +1,17 @@
 // страница index
 
-.index {
 
-	//переиспользуемые стили
-	@import '../common/modules/_welcome__bg';
-	@import '../common/modules/_user-block';
-
-
-	// Стили блоков страницы blog
+//переиспользуемые стили
+@import '../common/modules/_welcome__bg';
+@import '../common/modules/_user-block';
 
 
-	// кнопка авторизоваться
-	@import '../common/index/_btn-autho';
+// Стили блоков страницы blog
 
-	// описание в футере
-	@import '../common/index/_footer-desc';
-}
+
+// кнопка авторизоваться
+@import '../common/index/_btn-autho';
+
+// описание в футере
+@import '../common/index/_footer-desc';
+
