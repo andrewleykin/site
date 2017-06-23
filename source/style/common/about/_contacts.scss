@@ -1,0 +1,32 @@
+// блок контакты в карте
+
+.contacts {
+	width: 380px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	color: $greyColor;
+	@include flex(column, center, flex-start);
+	span {
+		margin-bottom: 25px;
+		padding-left: 80px;
+	}
+	&__title {
+		text-align: center;
+		color: $darkColor;
+		margin: 35px auto 45px;
+		@include sticks;
+		&::before,&::after {
+			color: #d5d6d7;
+			opacity: 1;
+		}
+	}
+	&__item {
+		color: rgba(69,90,100,0.8);
+		font-family: $mediumFont;
+		i {
+			margin-right: 10px;
+			font-size: 25px;
+			color: $lightColor;
+		}
+	}
+}

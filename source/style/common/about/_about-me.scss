@@ -1,0 +1,28 @@
+// Блок ОБО МНЕ
+
+.about-me {
+	width: 48%;
+	@include flex(column, center, center);
+	text-align: right;
+	&__title {
+		@include sticks;
+		&::before,&::after {
+			margin-top: 0;
+		}
+		&-min {
+			@include sticks;
+		}
+	}
+	&__photo {
+		margin-bottom: 40px;
+	}
+	&__desc {
+		width: 79%;
+		margin: 0 auto 40px;
+		p {
+			margin-bottom: 10px;
+			color: $greyColor;
+			text-align: left;
+		}
+	}
+}

@@ -1,7 +1,14 @@
 // Главная страница стилей
 
+
+// Подключаем переменные
+@import 'common/_vars';
+
 // Подключаем шрифты
 @import 'common/_fonts';
+
+// Подключаем Основные стили
+@import 'common/_style';
 
 // Страница index
 @import 'pages/_index';

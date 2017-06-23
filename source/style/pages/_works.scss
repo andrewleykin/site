@@ -1,13 +1,13 @@
 // страница works
 
 .works {
-	@import '../common/_style';
-	@import '../common/_vars';
+	//переиспользуемые стили
+	
 	@import '../common/modules/_welcome__bg';
 	@import '../common/modules/_user-block';
 	@import '../common/modules/_header';
 	@import '../common/modules/_footer';
-
+	
 	// для треугольников 
 
 	.welcome__bg {

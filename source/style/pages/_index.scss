@@ -1,11 +1,10 @@
 // страница index
 
 .index {
-	@import '../common/_style';
-	@import '../common/_vars';
+	//переиспользуемые стили
+	
 	@import '../common/modules/_welcome__bg';
 	@import '../common/modules/_user-block';
-	@import '../common/modules/_footer';
 
 	// кнопка авторизоваться
 	.welcome__btn-auto {

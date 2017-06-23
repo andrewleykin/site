@@ -1,0 +1,15 @@
+// Круги в скиллах
+
+.circles {
+	fill: none;
+	stroke-width: 20;
+	z-index: 2;
+}
+.circle__first {
+	stroke: #dfdcd5;
+}
+.circle__second {
+	stroke: #1bb6b6;
+	stroke-dasharray: .0010 282.6;
+	transition: all 1s;
+}

@@ -1,0 +1,56 @@
+// Блок скилов
+
+.skills {
+	width: 48%;
+	@include flex(column, center, center);
+	&__title {
+		width: 100%;
+		@include sticks;
+		text-align: center;
+		margin-bottom: 30px;
+		&::before,&::after {
+			margin-top: -10%;
+		}
+	}
+	&__desc {
+		width: 100%;
+		color: $greyColor;
+		margin-bottom: 65px;
+	}
+	&__list-name {
+		width: 100%;
+		margin: 0 auto 20px;
+		display: block;
+		color: $greyColor;
+		font-size: 28px;
+		line-height: 32px;
+		align-self: flex-start;
+		font-family: $boldFont;
+	}
+	&__items {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	&__list {
+		width: 100%;
+	}
+	&__item {
+		display: inline-block;
+		width: 120px;
+		height: 120px;
+		position: relative;
+	}
+	&__name {
+		position: absolute;
+		margin: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $lightColor;
+		font-family: $mediumFont;
+		font-size: 13px;
+		z-index: 1;
+		width: 80px;
+		text-align: center;
+	}
+}

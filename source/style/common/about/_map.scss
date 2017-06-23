@@ -1,0 +1,9 @@
+// Блок карты
+
+.map {
+	min-height: 830px;
+	width: 100%;
+	background: url("../img/map__bg.jpg") no-repeat center center;
+	background-size: cover;
+	@include flex(row, center, center);
+}
