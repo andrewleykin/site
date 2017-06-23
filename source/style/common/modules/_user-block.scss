@@ -62,7 +62,7 @@
 	&__item {
 		display: inline-block;
 		background: $lightColor;
-		transition: $trs_time else;
+		transition: $trs_time all;
 		&:first-child {
 		border-bottom-left-radius: $user-block__radius;
 		}

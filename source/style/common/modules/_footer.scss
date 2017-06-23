@@ -1,4 +1,6 @@
+// стили для footer
 
+// блок футер
 .footer {
 	flex: 0 0 auto;
 	width: 100%;
@@ -7,6 +9,7 @@
 	color: #FFF;
 	@include flex(column,space-between,flex-start);
 }
+// футер верхняя линия
 .footer-top {
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 	width: 100%;
@@ -57,6 +60,7 @@
 		}
 	}
 }
+// футер нижняя линия
 .footer-bottom {
 	padding: 30px 35px;
 	width: 100%;

@@ -12,10 +12,6 @@ html,body {
 	width: 100%;
 	font-family: $regularFont;
 }
-// для footer
-main {
-	flex: 1 0 auto;
-}
 
 ul {
   list-style: none;
@@ -24,6 +20,11 @@ ul {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+// для footer
+main {
+	flex: 1 0 auto;
 }
 
 .container-1800 {
