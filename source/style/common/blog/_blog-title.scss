@@ -24,6 +24,7 @@
 		text-transform: uppercase;
 		&::after,&::before {
 			margin-top: 0;
+			background: $whiteColor;
 		}
 	}
 }
