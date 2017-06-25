@@ -17,3 +17,7 @@ mixin circle (name, number)
       transform="rotate(-90 55 55)"
       )
       span.skills__name= name
+
+mixin svg-bg (name)
+  svg(role='img', title= name)
+    use(xlink:href='map.svg#'+ name)

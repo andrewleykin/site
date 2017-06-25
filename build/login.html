@@ -1,0 +1,44 @@
+
+<!-- шаблон структуры страницы--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="app/css/foundation.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <script src="app/js/foundation.js" defer></script>
+    <script src="app/js/app.js" defer></script>
+    <script>svg4everybody();</script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <section class="welcome__bg">
+      <div class="login">
+        <div class="login__top"><span class="login__title title-min">Авторизуйтесь</span>
+          <form class="login__form" action="#">
+            <label class="login__login-label" for="login"><i class="fa fa-user"></i></label>
+            <input class="login__login" placeholder="Логин" type="text" name="login">
+            <label class="login__pass-label" for="pass"><i class="fa fa-key"></i></label>
+            <input class="login__pass" placeholder="Пароль" type="password" name="pass">
+            <div class="login__check-block">
+              <input class="login__check" type="checkbox" id="checkbox">
+              <label class="login__check-label" for="checkbox"> <i class="fa fa-check"></i>Я человек</label>
+            </div><span class="login__q">Вы точно не робот?</span>
+            <div class="login__radio-block">
+              <input class="login__radio" type="radio" name="radio" id="radio1">
+              <label class="login__radio-label" for="radio1">Да</label>
+              <input class="login__radio" type="radio" name="radio" id="radio2">
+              <label class="login__radio-label" for="radio2">Не уверен </label>
+            </div>
+            <input class="login__btn" type="submit" name="submit" value="Войти"><a class="login__link" href="index.html">На главную</a>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

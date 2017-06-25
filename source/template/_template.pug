@@ -1,5 +1,7 @@
 // шаблон структуры страницы
 
+include common/_mixin
+
 block variables
 
 doctype html
@@ -20,6 +22,7 @@ html
     link(rel='stylesheet' href='app/css/main.css')
     script(src='app/js/foundation.js' defer)
     script(src="app/js/app.js" defer)
+    script svg4everybody();
 
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
