@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 150px;
 	background: #555b5e;
-	color: #FFF;
+	color: $whiteColor;
 	@include flex(column,space-between,flex-start);
 }
 // футер верхняя линия
@@ -21,7 +21,7 @@
 	&__link {
 		display: block;
 		padding: 30px 35px;
-		color: #fff;
+		color: $whiteColor;
 		font-family: $mediumFont;
 		text-align: center;
 		transition: $trs_time all;
@@ -46,7 +46,7 @@
 					padding: 6px;
 					transition: $trs_time all;
 					&:hover {
-						background: #FFF;
+						background: $whiteColor;
 						color: #000;
 					}
 				}

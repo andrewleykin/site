@@ -30,6 +30,7 @@
 		color: rgba(55,62,66,0.5);
 		font-family: $regularFont;
 		transition: $trs_time all;
+		outline: 0;
 		&:focus {
 			border: 2px solid $greenColor;
 			outline: 0;
@@ -58,6 +59,7 @@
 	&__check {
 		position: relative;
 		margin-right: 5px;
+		outline: 0;
 		&-label {
 			vertical-align: middle;
 			font-family: $regularFont;
@@ -67,7 +69,7 @@
 				z-index: 5;
 				left: -27px;
 				top: 2px;
-				color: #FFF;
+				color: $whiteColor;
 			}
 		}
 		&-block {
@@ -83,7 +85,7 @@
 			content: "";
 			width: 20px;
 			height: 20px;
-			background: #fff;
+			background: $whiteColor;
 			transform: translateX(-7px);
 		}
 		&::after {
@@ -105,6 +107,7 @@
 	&__radio {
 		position: relative;
 		margin-right: 5px;
+		outline: 0;
 		&-block {
 			width: 100%;
 			text-align: center;
@@ -124,7 +127,7 @@
 			width: 18px;
 			height: 18px;
 			border: 1px solid #eee;
-			background: #fff;
+			background: $whiteColor;
 			transform: translate(-7px, -2px);
 			border-radius: 50%;
 		}
@@ -154,7 +157,7 @@
 		width: 50%;
 		outline: 0;
 		border: 0;
-		color: #FFF;
+		color: $whiteColor;
 		font-family: $mediumFont;
 		&:hover {
 			background: $greenColor;

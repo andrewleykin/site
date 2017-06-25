@@ -10,6 +10,15 @@
 // Подключаем Основные стили
 @import 'common/_style';
 
+// Подключаем модули
+@import 'common/modules/_footer';
+@import 'common/modules/_header';
+@import 'common/modules/_triangle';
+@import 'common/modules/_user-block';
+@import 'common/modules/_welcome__bg';
+@import 'common/modules/_svg-bg';
+
+
 // Страница index
 @import 'pages/_index';
 

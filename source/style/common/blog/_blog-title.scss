@@ -13,13 +13,13 @@
 	top: 100%;
 	margin: 0 auto;
 	text-align: center;
-	color: #FFF;
+	color: $whiteColor;
 	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 	&__title {
 		margin-bottom: 0;
-		color: #FFF;
+		color: $whiteColor;
 		@include sticks;
 		text-transform: uppercase;
 		&::after,&::before {

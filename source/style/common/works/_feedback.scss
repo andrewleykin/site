@@ -16,6 +16,7 @@
 		&-block {
 			width: 450px;
 			margin: 0 auto;
+			position: relative;
 		}
 	}
 	&__arrow-up {
@@ -24,7 +25,7 @@
 		text-align: center;
 		i {
 			font-size: 25px;
-			color: #fff;
+			color: $whiteColor;
 			opacity: 0.5;
 			transition: $trs_time all;
 			cursor: pointer;

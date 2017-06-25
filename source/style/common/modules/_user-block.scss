@@ -6,6 +6,7 @@
 	width: 380px;
 	margin-bottom: 150px;
 	border-radius: $user-block__radius;
+	z-index: 100;
 	&__top {
 		display: flex;
 		align-items: center;
@@ -61,7 +62,7 @@
 	}
 	&__nav {
 		width: 100%;
-		color: #FFF;
+		color: $whiteColor;
 	}
 	&__list {
 		display: flex;
@@ -85,7 +86,7 @@
 		display: block;
 		cursor: pointer;
 		padding: 15px 30px;
-		color: #FFF;
+		color: $whiteColor;
 		font-family: $mediumFont;
 	}
 }

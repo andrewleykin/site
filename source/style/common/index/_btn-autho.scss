@@ -9,14 +9,14 @@
 	&__link {
 		display: block;
 		padding: 15px 30px;
-		color: #FFF;
+		color: $whiteColor;
 		border: 2px solid white;
 		border-radius: 5px;
 		background: transparent;
 		transition: $trs_time all;
 		font-family: $mediumFont;
 		&:hover {
-			background: #fff;
+			background: $whiteColor;
 			color: #00BFA5;
 		}
 	}

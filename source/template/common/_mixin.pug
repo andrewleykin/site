@@ -19,5 +19,5 @@ mixin circle (name, number)
       span.skills__name= name
 
 mixin svg-bg (name)
-  svg(role='img', title= name)
-    use(xlink:href='map.svg#'+ name)
+  svg(role='img', title= name, class='svg-bg__' + name)&attributes(attributes)
+    use(xlink:href='app/img/sprite/sprite.svg#'+ name)
