@@ -1,6 +1,6 @@
 // форма входа
 
-.login{
+.login {
 	background: rgba(255,255,255,.7);
 	margin: auto;
 	width: 380px;
@@ -44,6 +44,7 @@
 			margin: 0;
 			position: absolute;
 			left: 15px;
+			top: 124px;
 			border-top-left-radius: $user-block__radius;
 			border-bottom-left-radius: $user-block__radius;
 			padding: 13px;
@@ -54,6 +55,9 @@
 				color: #C4CBCD;
 			}
 		}
+	}
+	&__pass-label {
+		top: 189px;
 	}
 	// Чекбокс
 	&__check {
@@ -174,6 +178,21 @@
 		border-bottom-left-radius: $user-block__radius;
 	}
 }
+
+// для иконки при фокусе на текстовом поле
+.login__login:focus + .login__login-label {
+	i {
+		color: $greenColor;
+	}
+}
+
+.login__pass:focus + .login__pass-label {
+	i {
+		color: $greenColor;
+	}
+}
+
+
 // для текста при выбранной радио кнопке
 #radio1:checked + label[for="radio1"] {
 	color: $lightColor;

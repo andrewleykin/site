@@ -24,6 +24,7 @@ a {
 .wrapper {
 	position: relative;
 	background: $beigeColor;
+	z-index: 4;
 }
 .wrapper__bg__white {
 	background: $whiteColor;
@@ -67,6 +68,19 @@ main {
 	display: none;
 }
 
+// для синеватого оверлея 
+main::after {
+	content: "";
+	display: block;
+	background: #016672;
+	opacity: 0.3;
+	height: 770px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
 // миксины
 @mixin flex($fd, $jc, $ai) {
 	display: flex;
