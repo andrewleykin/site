@@ -71,3 +71,32 @@
 		line-height: 24px;
 	}
 }
+
+// Медиа запросы 
+
+@media screen and (max-width: 768px) {
+	.footer {
+		height: auto;
+	}
+	.footer-top {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	.footer-top__nav,.footer-top__social {
+		width: 100%;
+		text-align: center;
+	}
+	.footer-top__social {
+		display: block;
+		padding: 0;
+	}
+	.footer-bottom {
+		flex-wrap: wrap;
+		text-align: center;
+		padding-bottom: 0;
+		&__desc {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
+}

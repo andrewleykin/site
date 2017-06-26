@@ -54,3 +54,33 @@
 		text-align: center;
 	}
 }
+
+// Медиа запросы
+
+@media screen and (max-width: 1250px) {
+	.skills {
+		width: 45%;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.skills {
+		width: 100%;
+		background: #edebdf;
+		padding-top: 50px;
+		&__title {
+			&::before,&::after {
+				margin-top: 0;
+			}
+		}
+		&__desc {
+			width: 540px;
+			line-height: 1.5;
+			margin-bottom: 50px;
+		}
+		&__items,&__list-name {
+			text-align: center;
+		}
+	}
+}

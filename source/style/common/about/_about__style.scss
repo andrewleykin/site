@@ -7,4 +7,5 @@
 	@include flex(row, space-around, flex-start);
 	margin: 0 auto;
 	position: relative;
+	flex-wrap: wrap;
 }

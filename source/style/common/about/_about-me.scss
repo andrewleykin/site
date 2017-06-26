@@ -27,3 +27,19 @@
 		text-align: left;
 	}
 }
+
+// Меди запросы
+
+@media screen and (max-width: 768px) {
+	.container-1200 {
+		width: 720px;
+	}
+	.about-me {
+		width: 100%;
+		text-align: center;
+		&__desc {
+			width: 472px;
+			line-height: 1.5;
+		}
+	}
+}

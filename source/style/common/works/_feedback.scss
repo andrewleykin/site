@@ -35,3 +35,19 @@
 		}
 	}
 }
+
+// Медиа запросы
+
+@media screen and (max-width: 768px) {
+	.feedback {
+		min-height: 977px;
+		&__title {
+			&::after,&::before {
+				margin-top: 0;
+			}
+			&-block {
+				width: 100%;
+			}
+		}
+	}
+}
