@@ -6,3 +6,11 @@
 	opacity: 0.5;
 	font-family: $lightFont;
 }
+
+// Медиа запросы
+
+@media (max-width: 480px) {
+	.footer-desc{
+		text-align: center;
+	}
+}

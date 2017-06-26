@@ -49,3 +49,23 @@
 		width: 100%;
 	}
 }
+@media screen and (max-width: 665px) {
+	.comment {
+		flex-wrap: wrap;
+		flex-direction: column;
+		&__item {
+			margin-bottom: 40px;
+		}
+		&__icon {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			i.fa {
+				font-size: 50px;
+			}
+		}
+		&__desc {
+			margin-bottom: 10px;
+		}
+	}
+}

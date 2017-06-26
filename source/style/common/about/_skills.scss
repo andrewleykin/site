@@ -75,12 +75,17 @@
 			}
 		}
 		&__desc {
-			width: 540px;
+			width: 90%;
 			line-height: 1.5;
 			margin-bottom: 50px;
 		}
 		&__items,&__list-name {
 			text-align: center;
 		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.skills__desc{
+		width: 95%;
 	}
 }

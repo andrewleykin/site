@@ -44,8 +44,12 @@ main {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 10px;
-	@media screen and (max-width: 1250px) {
+	@media (max-width: 1250px) {
 		width: 100%;
+	}
+	@media (max-width: 820px) {
+		width: 100%;
+		padding: 0;
 	}
 }
 
@@ -83,7 +87,11 @@ main::after {
 	top: 0;
 	left: 0;
 	z-index: 2;
+	@media (max-width: 768px) {
+		height: 570px;
+	}
 }
+
 // миксины
 @mixin flex($fd, $jc, $ai) {
 	display: flex;

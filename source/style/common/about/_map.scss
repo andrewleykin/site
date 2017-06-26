@@ -7,3 +7,16 @@
 	background-size: cover;
 	@include flex(row, center, center);
 }
+
+// Медиа запросы
+
+@media screen and (max-width: 820px) {
+	.map {
+		min-height: 650px;
+	}
+}
+@media (max-width: 480px) {
+	.map {
+		align-items: flex-start;
+	}
+}

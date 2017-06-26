@@ -31,3 +31,16 @@
 		}
 	}
 }
+
+// Медиа запросы
+
+@media (max-width: 480px) {
+	.contacts {
+		width: 100%;
+		background: $whiteColor;
+		
+	}
+	.contacts__title {
+		margin: 15px auto 20px;
+	}
+}

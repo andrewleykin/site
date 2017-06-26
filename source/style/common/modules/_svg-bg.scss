@@ -58,7 +58,8 @@
 
 // Медиа запросы
 
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
 	.svg-bg__portfolio_header {
 		display: none;
 	}
@@ -72,5 +73,19 @@
 	}
 	.svg-bg__works_header {
 		height: 25vw;
+	}
+	.svg-bg__blog_header {
+		height: 20vw;
+		top: 57%;
+	}
+}
+@media (max-width: 665px) {
+	.svg-bg__about_header__dark {
+		top: -5%;
+	}
+}
+@media (max-width: 480px) {
+	.svg-bg__about_header__dark {
+		height: 30vw;
 	}
 }
