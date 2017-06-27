@@ -38,7 +38,7 @@
 
 // Медиа запросы
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.feedback {
 		min-height: 977px;
 		&__title {
@@ -48,6 +48,18 @@
 			&-block {
 				width: 100%;
 			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.feedback {
+		padding: 0;
+		&__title {
+			font-size: 2.3rem;
+			margin-bottom: 20px;
+		}
+		&__arrow-up {
+			margin-bottom: 25px;
 		}
 	}
 }

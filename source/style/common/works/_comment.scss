@@ -44,12 +44,13 @@
 
 // Медиа запросы
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
 	.comment {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 665px) {
+
+@media (max-width: 665px) {
 	.comment {
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -67,5 +68,11 @@
 		&__desc {
 			margin-bottom: 10px;
 		}
+	}
+}
+
+@media (max-width: 480px) {
+	.comment {
+		margin: 0 auto;
 	}
 }

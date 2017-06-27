@@ -26,6 +26,12 @@
 		min-height: 570px;
 	}
 	.welcome__bg-max-height {
-		min-height: 760px;
+		min-height: 100vh;
+		justify-content: space-around;
+	}
+}
+@media (max-width: 480px) {
+	.welcome__bg {
+		padding: 0;
 	}
 }

@@ -65,3 +65,21 @@
 		border-bottom-left-radius: $user-block__radius;
 	}
 }
+
+// Медиа запросы
+
+@media (max-width: 480px) {
+	.feedback-form {
+		width: 100%;
+		&-block {
+			width: 85%;
+			margin-bottom: 40px;
+		}
+		&__name, &__email {
+			padding: 10px 20px;
+		}
+		&__message {
+			height: 90px;
+		}
+	}
+}

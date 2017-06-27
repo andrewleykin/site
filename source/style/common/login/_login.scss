@@ -200,3 +200,22 @@
 #radio2:checked + label[for="radio2"] {
 	color: $lightColor;
 }
+
+// Медиа запросы
+
+@media (max-width: 480px) {
+	.login {
+		width: 85%;
+		&__title {
+			&::after,&::before {
+				margin: 1% 7px 0;
+			}
+		}
+		&__login,&__pass{
+			width: 75%;
+		}
+		&__link {
+			padding: 15px 25px;
+		}
+	}
+}

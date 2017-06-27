@@ -40,3 +40,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.about-me__photo img {
+		width: 300px;
+	}
+	.about-me__title {
+		&::after,&::before {
+			margin: 0 7px;
+		}
+	}
+}

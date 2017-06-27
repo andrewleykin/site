@@ -134,8 +134,44 @@
 		}
 	}
 }
-@media screen and (max-width: 580px) {
+
+@media (max-width: 580px) {
 	.slider-left {
 		bottom: 236px;
+	}
+}
+
+@media (max-width: 480px) {
+	.slider {
+		min-height: 569px;
+		margin-bottom: 25px;
+		&-right {
+			min-height: 569px;
+		}
+		&-left {
+			bottom: 94px;
+		}
+		&__title {
+			font-size: 1.7rem;
+		}
+		&__tools {
+			&-block {
+				width: 100%;
+				padding: 15px 0;
+			}
+		}
+		&__link {
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		&__display {
+			height: 257px;
+			img {
+				width: 300px;
+			}
+		}
+		&__prev,&__next {
+			height: 94px;
+		}
 	}
 }

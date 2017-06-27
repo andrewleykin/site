@@ -68,3 +68,19 @@
 		}
 	}
 }
+
+// Медиа запросы
+
+@media (max-width: 480px) {
+	.header {
+		margin-top: 50px;
+		&__social {
+			span {
+				margin: 0 15px;
+			}
+		}
+		&__menu {
+			margin-right: 10px;
+		}
+	}
+}

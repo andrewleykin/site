@@ -13,3 +13,11 @@
 		margin-top: 0;
 	}
 }
+
+// Медиа запросы 
+
+@media (max-width: 480px) {
+	.works__title-block {
+		padding: 20px 0 0;
+	}
+}	
