@@ -32,6 +32,7 @@ Thumbs.db
 .svn
 bower_components
 dist
+build/app/img/sprite/tmp
 
 # Node.JS
 node_modules
