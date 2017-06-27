@@ -5,6 +5,7 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	z-index: 9010;
 	&__social {
 		display: flex;
 		justify-content: center;
@@ -24,6 +25,7 @@
 			}
 		}
 	}
+	// гамбургер
 	&__menu {
 		width: 40px;
 		height: 7px;
@@ -32,6 +34,7 @@
 		background: $whiteColor;
 		cursor: pointer;
 		margin-top: 12px;
+		transition: $trs_time all;
 		&::after, &::before {
 			display: block;
 			width: 40px;
@@ -39,6 +42,7 @@
 			border-radius: 3px;
 			content: "";
 			background: $whiteColor;
+			transition: $trs_time all;
 		}
 		&::before {
 			transform: translateY(12px);
@@ -46,6 +50,20 @@
 		&::after {
 			transform: translateY(-19px);
 		}
+	}
+}
+
+// гамбургер активный
+.header__menu__active {
+	position: fixed;
+	z-index: 9021;
+	right: 2.7%;
+	background: transparent;
+	&::before {
+		transform: translateY(0px) rotate(45deg);
+	}
+	&::after {
+		transform: translateY(-8px) rotate(135deg);
 	}
 }
 
