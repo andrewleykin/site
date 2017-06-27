@@ -112,5 +112,11 @@
 @media (max-width: 480px) {
 	.user-block {
 		width: 300px;
+		&__nav {
+			font-size: 14px;
+		}
+		&__link {
+			padding: 13px 21px
+		}
 	}
 }

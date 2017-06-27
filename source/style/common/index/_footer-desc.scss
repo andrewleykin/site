@@ -12,5 +12,14 @@
 @media (max-width: 480px) {
 	.footer-desc{
 		text-align: center;
+		opacity: 0.8;
+	}
+	.footer-desc__width__100 {
+		display: block;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.footer-desc__display__none {
+		display: none;
 	}
 }

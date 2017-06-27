@@ -18,7 +18,9 @@
 	background-size: cover;
 	position: relative;
 }
-
+.welcome__bg-max-height {
+	min-height: 100vh;
+}
 // Медиа запросы 
 
 @media (max-width: 768px) {
