@@ -5,7 +5,8 @@
 	min-height: 750px;
 	@include flex(row, center, center);
 	margin-bottom: 70px;
-	z-index: 200;
+	z-index: 250;
+	position: relative;
 	&-left {
 		width: 50%;
 		&__info {

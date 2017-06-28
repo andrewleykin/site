@@ -6,17 +6,18 @@ var parallax = (function () {
 
 	return {
 		move: function(block, windowScroll, strafeAmount) {
-			var strafe = windowScroll/-strafeAmount + '%';
+			var strafe = windowScroll / -strafeAmount + '%';
 			var transformString = 'translate3d(0,' + strafe + ',0)';
 			
-			var style = block.style;
-			style.transform = transformString;
+			block.css.transform = transformString;
+
+			console.log(block.css.transform);
 		},
 		init: function (wScroll) {
 			this.move(bg, wScroll, 45);
-			this.move(svgPortfolio, wScroll, 25);
-			this.move(svgBlog, wScroll, 25);
-			this.move(user, wScroll, 10);
+			this.move(svgPortfolio, wScroll, 15);
+			this.move(svgBlog, wScroll, 15);
+			this.move(user, wScroll, 2);
 		}
 	}
 
