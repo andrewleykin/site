@@ -2,7 +2,9 @@
 
 .user-block {
 	background: transparent;
-	margin: auto;
+	position: absolute;
+	left: 30%;
+	top: 30%;
 	width: 380px;
 	margin-bottom: 150px;
 	border-radius: $user-block__radius;
