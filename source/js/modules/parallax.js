@@ -23,7 +23,7 @@ $(function(){
 		}
 
 	}());
-
+	
 	window.onscroll = function () {
 		var wScroll = window.pageYOffset;
 
