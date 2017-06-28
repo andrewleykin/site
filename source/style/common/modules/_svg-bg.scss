@@ -16,6 +16,7 @@
 	width: 100%;
 	height: 25vw;
 	z-index: 5;
+	transition: $trs_time all;
 }
 
 // Надпись works на заднем фоне
@@ -41,6 +42,7 @@
 	top : 2%;
 	left: 25%;
 	transform: translateX(-50%);
+	transition: $trs_time all;
 }
 
 // Надпись about - темная на заднем фоне
@@ -53,6 +55,7 @@
 	transform: translateX(-50%);
 	width: 96vw;
 	height: 12vw;
+	transition: $trs_time all;
 }
 
 
@@ -92,5 +95,9 @@
 		left: 50%;
 		top: 2%;
 		height: 25vw;
+	}
+	.svg-bg__blog_header {
+		height: 30vw;
+		top: 60%;
 	}
 }

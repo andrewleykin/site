@@ -1,5 +1,7 @@
 // Стили для меню
 
+
+// главный блок
 .main-menu {
 	position: fixed;
 	z-index: 9000;
@@ -7,18 +9,33 @@
 	height: 100%;
 	display: none;
 }
+
+// Список меню
 .main-menu__list {
 	position: relative;
 	margin: 0 auto;
-	width: 45%;
+	width: 100%;
 	z-index: 9001;
 	padding-top: 100px;
 	display: none;
 	transition: $trs_time all;
 }
+// Элемент списка меню
 .main-menu__item {
 	margin-bottom: 60px;
+	
+	// медиа запросы для этого элемента
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+	@media (max-width: 480px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 320px) {
+		margin-bottom: 10px;
+	}
 }
+// Ссылка меню
 .main-menu__link {
 	padding: 15px;
 	@include sticks;
@@ -31,7 +48,19 @@
 		opacity: 1;
 		background: $whiteColor;
 	}
+	
+	// медиа запросы для этого элемента
+	@media (max-width: 768px) {
+		font-size: 3rem;
+	}
+	@media (max-width: 480px) {
+		font-size: 2.5rem;
+	}
+	@media (max-width: 320px) {
+		font-size: 2rem;
+	}
 }
+// Эффект при наведении на ссылку
 .main-menu__link:hover::after {
 	display: block;
 }
@@ -39,6 +68,7 @@
 	display: block;
 }
 
+// Класс для анимации открытия
 .main-menu__animate {
 	&::before, &::after {
 		width: 50%;
@@ -50,14 +80,16 @@
 		bottom: 0;
 	}
 	&::before {
-		animation: left 1s linear;
+		animation: left 0.7s linear;
 		left: 0;
 	}
 	&::after {
-		animation: right 1s linear;
+		animation: right 0.7s linear;
 		right: 0;
 	}
 }
+
+// Анимации
 
 @keyframes left {
     from {

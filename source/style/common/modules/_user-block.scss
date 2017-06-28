@@ -112,6 +112,15 @@
 @media (max-width: 480px) {
 	.user-block {
 		width: 300px;
+		&__photo {
+			margin: 15px auto;
+		}
+		&__desc {
+			margin-bottom: 15px;
+		}
+		&__social {
+			margin-bottom: 15px;
+		}
 		&__nav {
 			font-size: 14px;
 		}
