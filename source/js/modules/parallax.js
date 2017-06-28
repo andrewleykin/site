@@ -9,9 +9,9 @@ var parallax = (function () {
 			var strafe = windowScroll / -strafeAmount + '%';
 			var transformString = 'translate3d(0,' + strafe + ',0)';
 			
-			block.css.transform = transformString;
+			var style = block.style;
 
-			console.log(block.css.transform);
+			style.transform = transformString;
 		},
 		init: function (wScroll) {
 			this.move(bg, wScroll, 45);
