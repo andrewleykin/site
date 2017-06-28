@@ -11,6 +11,7 @@
 		justify-content: center;
 		margin-bottom: 40px;
 		transition: $trs_time all;
+		padding: 25px;
 		span {
 			margin: 0 30px;
 			a {
@@ -36,6 +37,7 @@
 		cursor: pointer;
 		margin-top: 12px;
 		transition: $trs_time all;
+		margin: 25px;
 		&::after, &::before {
 			display: block;
 			width: 40px;
@@ -58,7 +60,7 @@
 .header__menu__active {
 	position: fixed;
 	z-index: 9021;
-	right: 2.7%;
+	right: 0;
 	background: transparent;
 	&::before {
 		transform: translateY(0px) rotate(45deg);
@@ -101,5 +103,11 @@
 		&__menu {
 			margin-right: 10px;
 		}
+	}
+}
+@media (max-width: 320px) {
+	.header__social {
+		margin-bottom: 0;
+		padding: 15px;
 	}
 }

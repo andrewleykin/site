@@ -15,10 +15,14 @@
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
-	z-index: 9001;
+	z-index: 9111;
 	padding-top: 100px;
 	display: none;
 	transition: $trs_time all;
+	@media (max-width: 480px) {
+		margin-bottom: 20px;
+		padding-top: 120px; 
+	}
 }
 // Элемент списка меню
 .main-menu__item {
@@ -26,10 +30,7 @@
 	
 	// медиа запросы для этого элемента
 	@media (max-width: 768px) {
-		margin-bottom: 40px;
-	}
-	@media (max-width: 480px) {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	@media (max-width: 320px) {
 		margin-bottom: 10px;

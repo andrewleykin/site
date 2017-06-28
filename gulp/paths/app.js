@@ -3,5 +3,6 @@
 'use strict';
 
 module.exports = [
-  './source/js/modules/menu.js'
+  './source/js/modules/menu.js',
+  './source/js/modules/parallax.js'
 ];

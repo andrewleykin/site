@@ -30,7 +30,7 @@
 // Надпись blog на заднем фоне
 .svg-bg__blog_header {
 	height: 15vw;
-	top: 45%;
+	top: 75%;
 	z-index: 5;
 }
 
@@ -78,8 +78,7 @@
 		height: 25vw;
 	}
 	.svg-bg__blog_header {
-		height: 20vw;
-		top: 57%;
+		height: 25vw;
 	}
 }
 @media (max-width: 665px) {
@@ -98,6 +97,12 @@
 	}
 	.svg-bg__blog_header {
 		height: 30vw;
-		top: 60%;
+	}
+}
+
+@media (max-width: 320px){
+	.svg-bg__blog_header {
+		height: 55vw;
+		top: 75%;
 	}
 }

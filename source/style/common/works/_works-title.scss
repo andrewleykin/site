@@ -7,6 +7,8 @@
 		display: inline-block;
 		text-align: center;
 		padding: 70px 0;
+		background: $whiteColor;
+		z-index: 200;
 	}
 	@include sticks;
 	&::before,&::after {

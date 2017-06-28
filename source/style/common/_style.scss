@@ -81,15 +81,12 @@ main::after {
 	display: block;
 	background: #016672;
 	opacity: 0.3;
-	height: 770px;
+	height: 200vh;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 2;
-	@media (max-width: 768px) {
-		height: 570px;
-	}
 }
 
 // миксины

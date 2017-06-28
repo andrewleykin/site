@@ -6,6 +6,7 @@
 	background: transparent;
 	outline: 0;
 	border: 0;
+	padding: 25px;
 	&__link {
 		display: block;
 		padding: 15px 30px;
@@ -27,5 +28,13 @@
 @media (max-width: 768px) {
 	.btn-autho {
 		align-self: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.btn-autho {
+		&__link {
+			padding: 10px 20px;
+		}
 	}
 }
