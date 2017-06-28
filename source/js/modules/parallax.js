@@ -1,3 +1,5 @@
+// стили для параллакс эффекта, на фоне гор
+
 $(function(){
 	const parallax = (function () {
 		var img = document.querySelector('.welcome__bg__img');

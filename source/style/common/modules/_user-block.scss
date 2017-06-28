@@ -3,12 +3,14 @@
 .user-block {
 	background: transparent;
 	position: absolute;
-	left: 30%;
+	left: 50%;
+	transform: translateX(-50%);
 	top: 30%;
 	width: 380px;
 	margin-bottom: 150px;
 	border-radius: $user-block__radius;
 	z-index: 100;
+	transition: $trs_time all;
 	&__top {
 		display: flex;
 		align-items: center;
@@ -104,6 +106,7 @@
 }
 
 // Медиа запросы
+
 
 @media (max-width: 768px) {
 	.user-block {
