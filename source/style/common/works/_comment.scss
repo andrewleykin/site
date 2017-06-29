@@ -6,6 +6,8 @@
 	padding: 20px;
 	margin-bottom: 70px;
 	@include flex(row, space-between, center);
+	z-index: 10;
+	position: relative;
 	&__item {
 		@include flex(column,space-between,flex-start);
 	}

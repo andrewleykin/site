@@ -63,6 +63,7 @@
 	&__check {
 		position: relative;
 		margin-right: 5px;
+		border: 0;
 		outline: 0;
 		&-label {
 			vertical-align: middle;
@@ -112,6 +113,7 @@
 		position: relative;
 		margin-right: 5px;
 		outline: 0;
+		border: 0;
 		&-block {
 			width: 100%;
 			text-align: center;

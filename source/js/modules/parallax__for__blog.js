@@ -1,11 +1,11 @@
-// js для параллакс эффекта, на фоне гор
+// js для параллакс эффекта, на фоне гор - страница blog
 'use sctrict';
 
 $(function(){
 	var parallax = (function () {
 		var img = document.querySelector('.welcome__bg__img');
-		var svgPortfolio = document.querySelector('.svg-bg__portfolio_header');
 		var user = document.querySelector('.user-block__top');
+		var svgBlog = document.querySelector('.svg-bg__blog_header');
 
 		return {
 			move: function(block, windowScroll, strafeAmount) {
@@ -16,7 +16,7 @@ $(function(){
 			},
 			init: function (wScroll) {
 				this.move(img, wScroll, 45);
-				this.move(svgPortfolio, wScroll, 20);
+				this.move(svgBlog, wScroll, 15);
 				this.move(user, wScroll, 5);
 			}
 		}
@@ -29,4 +29,3 @@ $(function(){
 		parallax.init(wScroll);
 	}
 })
-

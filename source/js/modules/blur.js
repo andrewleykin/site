@@ -7,7 +7,7 @@ $(function(){
 
 		return {
 			set: function () {
-				var imgWidth = document.querySelector('.feedback').offsetWidth,
+				var imgWidth = document.querySelector('.feedback__img__img').offsetWidth,
 					posLeft = -wrapper.offsetLeft,
 					posTop = -wrapper.offsetTop,
 					blurCss = form.style;

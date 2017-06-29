@@ -4,7 +4,7 @@
 	width: 100%;
 	position: relative;
 	z-index:5;
-	display: none;
+	// display: none;
 	&-block {
 		width: 380px;
 		margin: 0 auto;
@@ -21,7 +21,7 @@
 		color: $greyColor;
 		position: relative;
 		z-index:5;
-		display: none;
+		// display: none;
 		&::before,&::after {
 			margin: 0 8px;
 		}
@@ -35,6 +35,8 @@
 		outline: 0;
 		border: 0;
 		transition: $trs_time all;
+		position: relative;
+		z-index: 10;
 		&:focus {
 			border: 1px solid $greenColor;
 			outline: 0;
@@ -42,6 +44,7 @@
 	}
 	&__message {
 		height: 140px;
+		resize: none;
 	}
 	// кнопки отправить и очистить
 	&__bottom {
@@ -77,7 +80,51 @@
 }
 
 
+
+
+.feedback-form-block::before {
+	content: "";
+	display: block;
+	width: 380px;
+	height: 432px;
+	// background: red;
+	// position: relative;
+	background: url(../img/works__feedback__bg.jpg) no-repeat center;
+	background-size: 1184px;
+	background-position: -398px -524px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	filter: blur(20px);
+}
+
+
 // Медиа запросы
+
+@media (max-width: 848px) {
+	.feedback-form-block::before {
+		background-position: -398px -565px;
+	}
+}
+
+@media (max-width: 766px) {
+	.feedback-form-block::before {
+		background-position: -398px -644px;
+	}
+}
+
+@media (max-width: 666px) {
+	.feedback-form-block::before {
+		background-position: -398px -761px;
+	}
+}
+
+@media (max-width: 556px) {
+	.feedback-form-block::before {
+		background-position: -398px -771px;
+	}
+}
+
 
 @media (max-width: 480px) {
 	.feedback-form {
@@ -92,5 +139,58 @@
 		&__message {
 			height: 90px;
 		}
+	}
+	.feedback-form-block::before {
+		background-position: -386px -750px;
+	}
+}
+
+@media (max-width: 400px) {
+	.feedback-form-block::before {
+		background-position: -372px -761px;
+	}
+}
+
+@media (max-width: 380px) {
+	.feedback-form-block::before {
+		width: 308px;
+		background-position: -372px -771px;
+	}
+}
+
+@media (max-width: 330px) {
+	.feedback-form-block::before {
+		width: 266px;
+		background-position: -372px -792px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.feedback-form-block::before {
+		background-position: -372px -517px;
+	}
+}
+
+@media (min-width: 1450px) {
+	.feedback-form-block::before {
+		background-position: -372px -500px;
+	}
+}
+
+@media (min-width: 1550px) {
+	.feedback-form-block::before {
+		background-position: -372px -480px;
+	}
+}
+
+@media (min-width: 1650px) {
+	.feedback-form-block::before {
+		background-position: -372px -460px;
+	}
+}
+
+@media (min-width: 1750px) {
+	.feedback-form-block::before {
+		background-position: -372px -440px;
 	}
 }

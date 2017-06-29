@@ -92,11 +92,16 @@
 		padding: 15px 30px;
 		color: $whiteColor;
 		font-family: $mediumFont;
+		&__border {
+			padding-left: 33px;
+		}
 	}
 }
 
 .user-block__bg__white {
 	background: rgba(252,252,252,.85);
+	margin-bottom: 50px;
+	top: 20%;
 }
 .user-block__name__color__grey {
 	color: $greyColor;
