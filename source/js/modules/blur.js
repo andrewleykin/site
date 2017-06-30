@@ -7,10 +7,15 @@ $(function(){
 
 		return {
 			set: function () {
-				var imgWidth = document.querySelector('.feedback__img__img').offsetWidth,
-					posLeft = -wrapper.offsetLeft,
-					posTop = -wrapper.offsetTop,
-					blurCss = form.style;
+				var imgWidth = document.querySelector('.feedback__img__img');
+				// .offsetWidth,
+				// 	posLeft = -wrapper.offsetLeft,
+				// 	posTop = -wrapper.offsetTop,
+				// 	blurCss = form.style;
+
+				if(imgWidth.length) {
+					
+				}
 
 				blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
 				blurCss.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';

@@ -1,6 +1,6 @@
 // описание в футере
 
-.footer-desc {
+.index-desc {
 	color: $whiteColor;
 	align-self: center;
 	opacity: 0.5;
@@ -11,16 +11,16 @@
 // Медиа запросы
 
 @media (max-width: 480px) {
-	.footer-desc{
+	.index-desc{
 		text-align: center;
 		opacity: 0.8;
 	}
-	.footer-desc__width__100 {
+	.index-desc__wide {
 		display: block;
 		width: 100%;
 		margin-bottom: 5px;
 	}
-	.footer-desc__display__none {
+	.index-desc__hide {
 		display: none;
 	}
 }

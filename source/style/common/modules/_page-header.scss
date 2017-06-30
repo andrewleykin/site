@@ -1,10 +1,9 @@
-// стили welcome__bg
+// стили page-header
 
-.welcome__bg {
+.page-header {
 	width: 100%;
 	height: 100vh;
 	min-height: 650px;
-	// padding: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -15,19 +14,27 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		background: url(../img/welcome__bg__big-size.jpg) 0 0 no-repeat;
+		background: url(../img/page-header--big.jpg) 0 0 no-repeat;
 		background-size: cover;
 	}
 }
 
-.welocome__bg__min-height {
+.page-header--small {
 	max-height: 396px;
-	// background: url(../img/welcome__bg__min-height.jpg) no-repeat 0 0;
 	background-size: cover;
 	position: relative;
 }
-.welcome__bg-max-height {
-	background: url(../img/welcome__bg.jpg) no-repeat 0 0;
+.page-header__img--small {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 110vh;
+	background: url(../img/page-header--small.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+.page-header--big {
+	background: url(../img/page-header.jpg) no-repeat 0 0;
 	background-size: cover;
 	min-height: 100vh;
 	
@@ -35,16 +42,16 @@
 // Медиа запросы 
 
 @media (max-width: 768px) {
-	.welcome__bg {
+	.page-header {
 		min-height: 570px;
 	}
-	.welcome__bg-max-height {
+	.page-header--big {
 		min-height: 100vh;
 		justify-content: space-between;
 	}
 }
 @media (max-width: 480px) {
-	.welcome__bg {
+	.page-header {
 		padding: 0;
 	}
 }

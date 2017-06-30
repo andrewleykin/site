@@ -1,13 +1,12 @@
 // js для параллакс эффекта, на фоне гор
 'use sctrict';
-console.log($('body'));
+
 $(function(){
 	var parallax = (function () {
-		var img = document.querySelector('.welcome__bg__img');
-		var svgPortfolio = document.querySelector('.svg-bg__portfolio_header');
+		var img = document.querySelector('.page-header__img');
+		var svgText = document.querySelector('.js__header-text');
 		var user = document.querySelector('.user-block__top');
 
-		
 		return {
 			move: function(block, windowScroll, strafeAmount) {
 				var strafe = windowScroll / -strafeAmount + '%';
@@ -17,17 +16,17 @@ $(function(){
 			},
 			init: function (wScroll) {
 				this.move(img, wScroll, 45);
-				this.move(svgPortfolio, wScroll, 20);
-				this.move(user, wScroll, 5);
+				this.move(svgText, wScroll, 30);
+				this.move(user, wScroll, 10);
 			}
 		}
 
+		
 	}());
-	
 	window.onscroll = function () {
 		var wScroll = window.pageYOffset;
-
 		parallax.init(wScroll);
 	}
+
 })
 

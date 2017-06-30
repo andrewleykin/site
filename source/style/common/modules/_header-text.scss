@@ -1,10 +1,8 @@
 // Стили для надписей на фоне
 
 
-// Надпись portfolio, blog, works на заднем фоне
-.svg-bg__portfolio_header,
-.svg-bg__blog_header,
-.svg-bg__works_header {
+// Надписи общий стиль
+.header-text {
 	fill: $whiteColor;
 	opacity: 0.06;
 	position: absolute;
@@ -18,7 +16,7 @@
 }
 
 // Надпись works на заднем фоне
-.svg-bg__works_header {
+.header-text--works_header {
 	fill: black;
 	opacity: 0.07;
 	height: 10vw;
@@ -27,24 +25,26 @@
 }
 
 // Надпись blog на заднем фоне
-.svg-bg__blog_header {
+.header-text--blog_header {
 	height: 19vw;
 	top: 46%;
 	z-index: 5;
 }
 
 // Надпись about на заднем фоне
-.svg-bg__about_header {
+.header-text--about_header {
 	fill: black;
 	opacity: 0.07;
 	position: absolute;
 	top : 2%;
 	left: 25%;
 	transform: translateX(-50%);
+	height: 8vw;
+	transition: $trs_time all;
 }
 
 // Надпись about - темная на заднем фоне
-.svg-bg__about_header__dark {
+.header-text--about_header_dark {
 	fill: black;
 	opacity: 0.07;
 	position: absolute;
@@ -58,68 +58,87 @@
 
 
 // Медиа запросы
+@media (max-width: 1200px) {
+	.header-text--about_header {
+		height: 10vw;
+		top: 3%;
+	}
+}
 @media (max-width: 1000px) {
-	.svg-bg__works_header {
+	.header-text--works_header {
 		top: 15%;
+	}
+	.header-text--about_header {
+		height: 13vw;
 	}
 }
 
 @media (max-width: 768px) {
-	.svg-bg__portfolio_header {
+	.header-text--portfolio_header {
 		display: none;
 	}
-	.svg-bg__about_header {
+	.header-text--about_header {
 		left: 50%;
 		top: 1%;
+		height: 18vw;
 	}
-	.svg-bg__about_header__dark {
+	.header-text--about_header_dark {
 		top: -85%;
 		height: 25vw;
 	}
-	.svg-bg__works_header {
+	.header-text--works_header {
 		height: 25vw;
 	}
-	.svg-bg__blog_header {
+	.header-text--blog_header {
 		height: 25vw;
 	}
 }
 @media (max-width: 665px) {
-	.svg-bg__about_header__dark {
+	.header-text--about_header_dark {
 		top: -5%;
 	}
 }
+@media (max-width: 520px) {
+	.header-text--about_header {
+		height: 25vw;
+	}
+}
 @media (max-width: 480px) {
-	.svg-bg__about_header__dark {
+	.header-text--about_header_dark {
 		height: 30vw;
 	}
-	.svg-bg__about_header {
+	.header-text--about_header {
 		left: 50%;
 		top: 2%;
 		height: 25vw;
 	}
-	.svg-bg__blog_header {
+	.header-text--blog_header {
 		height: 30vw;
 	}
-	.svg-bg__works_header {
+	.header-text--works_header {
 		height: 20vw;
 		top: 0;
 	}
 }
 
 @media (max-width: 320px){
-	.svg-bg__blog_header {
+	.header-text--blog_header {
 		height: 55vw;
 		top: 75%;
 	}
-	.svg-bg__works_header {
+	.header-text--works_header {
 		height: 25vw;
 		top: 20%;
+	}
+	.header-text--about_header {
+		height: 25vw;
+		top: 2%;
 	}
 }
 
 
 @media (min-width: 1200px) {
-	.svg-bg__portfolio_header {
+	.header-text--portfolio_header {
 		top: 24%;
 	}
 }
