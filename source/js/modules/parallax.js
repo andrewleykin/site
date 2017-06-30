@@ -1,12 +1,13 @@
 // js для параллакс эффекта, на фоне гор
 'use sctrict';
-
+console.log($('body'));
 $(function(){
 	var parallax = (function () {
 		var img = document.querySelector('.welcome__bg__img');
 		var svgPortfolio = document.querySelector('.svg-bg__portfolio_header');
 		var user = document.querySelector('.user-block__top');
 
+		
 		return {
 			move: function(block, windowScroll, strafeAmount) {
 				var strafe = windowScroll / -strafeAmount + '%';

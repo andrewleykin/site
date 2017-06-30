@@ -87,6 +87,9 @@ main::after {
 	top: 0;
 	left: 0;
 	z-index: 2;
+	@media (max-width:480px) {
+		height: 180vh;
+	}
 }
 
 // миксины
