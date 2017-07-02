@@ -1,0 +1,29 @@
+// стили для parallax эффекта
+
+
+.parallax {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background: url('../img/index-parallax-layer00.jpg');
+	z-index: 1000;
+}
+
+.parallax__layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	will-change: transform;
+}
+
+.parallax__image {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) scale(0.8);
+}

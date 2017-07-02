@@ -7,12 +7,13 @@
 	border-radius: $user-block__radius;
 	padding-bottom: 80px;
 	position: relative;
+	min-height: 410px;
 	&__top {
 		@include flex(column,space-between,center);
 	}
 	// заголовок
 	&__title {
-		margin-top: 40px;
+		margin-top: 25px;
 		@include sticks;
 		&::after,&::before {
 			margin-top: 1%;
@@ -44,7 +45,7 @@
 			margin: 0;
 			position: absolute;
 			left: 15px;
-			top: 124px;
+			top: 109px;
 			border-top-left-radius: $user-block__radius;
 			border-bottom-left-radius: $user-block__radius;
 			padding: 13px;
@@ -57,7 +58,7 @@
 		}
 	}
 	&__pass-label {
-		top: 189px;
+		top: 174px;
 	}
 	// Чекбокс
 	&__check {

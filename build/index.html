@@ -15,22 +15,60 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
+    <div class="parallax">
+      <div class="parallax__layer"><img class="parallax__image01 parallax__image" src="app/img/index-parallax-layer01.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image02 parallax__image" src="app/img/index-parallax-layer02.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image03 parallax__image" src="app/img/index-parallax-layer03.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image04 parallax__image" src="app/img/index-parallax-layer04.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image05 parallax__image" src="app/img/index-parallax-layer05.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image06 parallax__image" src="app/img/index-parallax-layer06.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image07 parallax__image" src="app/img/index-parallax-layer07.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image08 parallax__image" src="app/img/index-parallax-layer08.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image09 parallax__image" src="app/img/index-parallax-layer09.png"/></div>
+    </div>
     <section class="main page-header page-header--big">
-      <button class="btn-autho"><a class="btn-autho__link" href="login.html">Авторизоваться</a></button>
-      <div class="user-block user-block__bg__white">
-        <div class="user-block__top">
-          <div class="user-block__photo"></div><span class="user-block__name user-block__name__color__grey">Андрей Лейкин</span><span class="user-block__desc user-block__desc__color__grey">Личный сайт веб разработчика</span>
-          <div class="user-block__social"><span><a href="https://vk.com/id32952099" target="_blank"><i class="fa fa-vk"></i>Вк</a></span><span><a href="https://github.com/andrewleykin" target="_blank"><i class="fa fa-github-alt"></i>Гитхаб</a></span><span><a href="https://www.instagram.com/andrewleykin" target="_blank"><i class="fa fa-instagram"></i>Inst</a></span></div>
-        </div>
-        <div class="user-block__bottom">
-          <nav class="user-block__nav">
-            <ul class="user-block__list">
-              <li class="user-block__item"><a class="user-block__link" href="works.html">Мои   работы</a></li>
-              <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне</a></li>
-              <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li>
-            </ul>
-          </nav>
-        </div>
+      <button class="btn-autho"><a class="btn-autho__link" href="#">Авторизоваться</a></button>
+      <div class="flip">
+        <figure class="flip__front">
+          <div class="user-block user-block__bg__white">
+            <div class="user-block__top">
+              <div class="user-block__photo"></div><span class="user-block__name user-block__name__color__grey">Андрей Лейкин</span><span class="user-block__desc user-block__desc__color__grey">Личный сайт веб разработчика</span>
+              <div class="user-block__social"><span><a href="https://vk.com/id32952099" target="_blank"><i class="fa fa-vk"></i>Вк</a></span><span><a href="https://github.com/andrewleykin" target="_blank"><i class="fa fa-github-alt"></i>Гитхаб</a></span><span><a href="https://www.instagram.com/andrewleykin" target="_blank"><i class="fa fa-instagram"></i>Inst</a></span></div>
+            </div>
+            <div class="user-block__bottom">
+              <nav class="user-block__nav">
+                <ul class="user-block__list">
+                  <li class="user-block__item"><a class="user-block__link" href="works.html">Мои   работы</a></li>
+                  <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне</a></li>
+                  <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </figure>
+        <figure class="flip__back">
+          <div class="login">
+            <div class="login__top"><span class="login__title title-min">Авторизуйтесь</span>
+              <form class="login__form" action="#">
+                <input class="login__login" placeholder="Логин" type="text" name="login">
+                <label class="login__login-label" for="login"><i class="fa fa-user"></i></label>
+                <input class="login__pass" placeholder="Пароль" type="password" name="pass">
+                <label class="login__pass-label" for="pass"><i class="fa fa-key"></i></label>
+                <div class="login__check-block">
+                  <input class="login__check" type="checkbox" id="checkbox">
+                  <label class="login__check-label" for="checkbox"> <i class="fa fa-check"></i>Я человек</label>
+                </div><span class="login__q">Вы точно не робот?</span>
+                <div class="login__radio-block">
+                  <input class="login__radio" type="radio" name="radio" id="radio1">
+                  <label class="login__radio-label" for="radio1">Да</label>
+                  <input class="login__radio" type="radio" name="radio" id="radio2">
+                  <label class="login__radio-label" for="radio2">Не уверен </label>
+                </div>
+                <input class="login__btn" type="submit" name="submit" value="Войти"><a class="login__link" href="#">На главную</a>
+              </form>
+            </div>
+          </div>
+        </figure>
       </div><span class="index-desc"> <span class="index-desc__wide">© Лейкин Андрей <span class="index-desc__hide"> </span></span>создано с любовью в LoftSchool | 2017</span>
     </section>
   </body>
