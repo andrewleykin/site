@@ -7,6 +7,8 @@
 	outline: 0;
 	border: 0;
 	padding: 25px;
+	position: relative;
+	z-index: 1010;
 	&__link {
 		display: block;
 		padding: 15px 30px;

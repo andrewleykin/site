@@ -9,6 +9,8 @@
 	width: 380px;
 	height: 410px;
 	perspective: 600px;
+	position: relative;
+	z-index: 1010;
 }
 
 .flip.js__flip {
@@ -31,4 +33,39 @@
 	transform: rotateY(180deg);
 	top: 4%;
 	left: 10%;
+}
+
+// Медиа запросы 
+
+@media (max-width:768px) {
+	.flip {
+		transform: translateX(0);
+		left: 25%;
+	}
+}
+
+@media (max-width:600px) {
+	.flip {
+		left: 13%;
+	}
+}
+
+@media (max-width:500px) {
+	.flip {
+		left: 7%;
+	}
+}
+
+@media (max-width:320px) {
+	.flip {
+		width: 300px;
+		left: 0;
+	}
+	.flip__front {
+		width: 300px;
+	}
+	.flip__back {
+		width: 300px;
+		left: -3%;
+	}
 }

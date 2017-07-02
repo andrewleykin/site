@@ -11,6 +11,9 @@
 	overflow: hidden;
 	background: url('../img/index-parallax-layer00.jpg');
 	z-index: 1000;
+	@media (max-width: 960px) {
+		display: none;
+	}
 }
 
 .parallax__layer {
@@ -23,7 +26,26 @@
 }
 
 .parallax__image {
+	top: 0;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%) scale(0.8);
+}
+
+.parallax__image03 {
+	width: 25%;
+	left: 80%;
+	top: 10%;
+}
+
+.parallax__image06 {
+	width: 30%;
+	left: 45%;
+	top: 35%;
+}
+
+.parallax__image09 {
+	width: 50%;
+	left: 14%;
+	top: 60%;
 }

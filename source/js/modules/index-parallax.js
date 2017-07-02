@@ -4,7 +4,6 @@ $(function(){
 	var parallaxContainer = $('.parallax'),
 		layers = $('.parallax__layer');
 
-		console.log(layers);
 
 	var moveLayers = function (e) {
 		var initialX = (window.innerWidth / 2) - e.pageX,
@@ -14,12 +13,9 @@ $(function(){
 			var divider = index / 100,
 				positionX = initialX * divider,
 				positionY = initialY * divider,
-				bottomPosition = (window.innerHeight / 2) * divider,
-				transformString = 'translate(' + positionX + 'px' + ' ' + positionY + 'px)',
-				image = layer.firstElementChild;
+				transformString = 'translate(' + positionX + 'px,' + positionY + 'px)';
 
 			layer.style.transform = transformString;
-			image.style.bottom = '-' + bottomPosition + 'px';
 		});
 	};
 
