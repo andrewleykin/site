@@ -52,20 +52,14 @@
 
 @media (max-width:500px) {
 	.flip {
-		left: 7%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
 	}
-}
-
-@media (max-width:320px) {
-	.flip {
-		width: 300px;
-		left: 0;
-	}
-	.flip__front {
-		width: 300px;
+	.flip.js__flip {
+		transform: translateX(-60%) rotateY(180deg);
 	}
 	.flip__back {
-		width: 300px;
-		left: -3%;
+		left: 0;
 	}
 }

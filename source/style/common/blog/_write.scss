@@ -45,3 +45,26 @@
 		}
 	}
 }
+@media screen and (max-width: 480px) {
+
+	.write__item {
+		padding-bottom: 50px;
+		margin-bottom: 55px;
+		p {
+			font-size: 0.9rem;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.write__item {
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		p {
+			font-size: 0.8rem;
+			margin-bottom: 10px;
+		}
+	}
+}

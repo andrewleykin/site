@@ -10,6 +10,8 @@
 	}
 	&__link {
 		color: $greyColor;
+		transition: $trs_time all;
+		position: relative;
 		&-active {
 			color: #00bfa5;
 			position: relative;
@@ -23,8 +25,23 @@
 				position: absolute;
 				right: -20px;
 				top: -8px;
-				
 			}
+		}
+		&:hover {
+			color: #00bfa5;
+			&::before {
+				display: block;
+			}
+		}
+		&::before {
+			content:"";
+			display: none;
+			width: 3px;
+			height: 40px;
+			background: #00BFA5;
+			position: absolute;
+			right: -20px;
+			top: -8px;
 		}
 	}
 }

@@ -143,7 +143,17 @@
 @media (max-width: 320px) {
 	.user-block {
 		position: relative;
-		left: 4%;
+	}
+	.user-block--pages {
+		top: 10%;
+		width: 250px;
+		left: 0;
 		transform: translateX(0);
+	}
+	.user-block__top {
+		top: 0;
+	}
+	.user-block__photo--blog-page {
+		margin-top: -40px;
 	}
 }
