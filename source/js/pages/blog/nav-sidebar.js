@@ -3,15 +3,27 @@
 (function() {
 
 	var link = $('.sidebar__link');
-
 	$(function(){
-		link.click(function(e) {
-			e.preventDefault();
 
-			showArticle($(this).attr('href'), true);
+		var navSidebarPromise = new Promise (function(resolve, reject) {
+			if (link.length) {
+				resolve();
+			} else {
+				reject();
+			}
 		});
 
-		showArticle(window.location.hash, false);
+		navSidebarPromise.then(function() {
+			link.click(function(e) {
+				e.preventDefault();
+
+				showArticle($(this).attr('href'), true);
+			});
+		}).catch(function(){
+			console.log('sidebar__link нету на странице');
+		});
+
+
 	});
 
 	$(window).scroll(function() {
