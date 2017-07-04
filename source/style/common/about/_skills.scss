@@ -27,9 +27,11 @@
 		align-self: flex-start;
 		font-family: $boldFont;
 	}
-	&__items {
-		width: 100%;
+	&__items{
 		margin-bottom: 45px;
+	}
+	&__items-wrap {
+		width: 100%;
 	}
 	&__list {
 		width: 100%;

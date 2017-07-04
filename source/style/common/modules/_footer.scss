@@ -106,3 +106,20 @@
 		padding: 30px 15px;
 	}
 }
+
+@media (max-width: 480px) {
+	.footer-top__link {
+		padding: 30px 3px;
+		font-size: 14px;
+	}
+	.footer-bottom {
+		font-size: 14px;
+		padding: 15px 40px;
+	}
+}
+
+@media (max-width: 320px) {
+	.footer-bottom {
+		padding: 15px 10px;
+	}
+}

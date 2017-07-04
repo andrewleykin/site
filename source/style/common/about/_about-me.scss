@@ -30,13 +30,28 @@
 
 // Меди запросы
 
+@media screen and (max-width: 980px) {
+	.about-me__photo {
+		img {
+			width: 80%;
+			margin-right: 10%;
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.about-me {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 0;
 		&__desc {
 			width: 80%;
 			line-height: 1.5;
+		}
+		&__photo {
+			img {
+				margin-right: 0;
+			}
 		}
 	}
 }
