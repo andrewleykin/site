@@ -2,9 +2,28 @@
 'use sctrict';
 
 $(function(){
+	// задаём общую переменную
+	var svgText = document.querySelector('.js__header-text');
+
+	// промис который будет проверять наличие svgText в page-header
+	var parallaxPromise = new Promise (function(resolve, reject) {
+			if (svgText.length) {
+				resolve();
+			} else {
+				reject();
+			}
+		});
+
+	// функция при наличии svgText в page-header
+	parallaxPromise.then(function(){
+		parallax();
+	}).catch(function(){
+		return ;
+		});
+
+	// функция для parallax при скроле
 	var parallax = (function () {
 		var img = document.querySelector('.page-header__img');
-		var svgText = document.querySelector('.js__header-text');
 		var user = document.querySelector('.user-block__top');
 
 		return {
@@ -20,13 +39,10 @@ $(function(){
 				this.move(user, wScroll, 10);
 			}
 		}
-
-		
 	}());
 	window.onscroll = function () {
 		var wScroll = window.pageYOffset;
 		parallax.init(wScroll);
 	}
-
 })
 

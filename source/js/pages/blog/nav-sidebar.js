@@ -2,9 +2,13 @@
 
 (function() {
 
-	var link = $('.sidebar__link');
+	// переменные
+	var link = $('.sidebar__link'),
+		item = $('.write__item');
+
 	$(function(){
 
+		// промис который будет проверять наличие Сайдбара на странице
 		var navSidebarPromise = new Promise (function(resolve, reject) {
 			if (link.length) {
 				resolve();
@@ -13,6 +17,7 @@
 			}
 		});
 
+		// функция при наличии сайдбара
 		navSidebarPromise.then(function() {
 			link.click(function(e) {
 				e.preventDefault();
@@ -20,32 +25,32 @@
 				showArticle($(this).attr('href'), true);
 			});
 		}).catch(function(){
-			console.log('sidebar__link нету на странице');
+			return ;
 		});
 
 
 	});
 
+	// при скролле вызывать функцию checkArticle
 	$(window).scroll(function() {
 		checkArticle();
 	});
 
 
+	// функция для скролла к нужному элементу
 	function showArticle(article, isAnimate) {
 		var direction = article.replace(/#/, ''),
-			reqArticle = $('.write__item').filter('[data-article="' + direction + '"]'),
+			reqArticle = item.filter('[data-article="' + direction + '"]'),
 			reqArticlePos = reqArticle.offset().top;
 
 		if (isAnimate) {
 			$('body, html').animate({scrollTop: reqArticlePos}, 500);
-		} else {
-			$('body, html').scrollTop(reqArticlePos);
 		}
 	}
 
-
+	// функция для автоматическего переключения класса active у ссылок
 	function checkArticle() {
-		$('.write__item').each(function() {
+		item.each(function() {
 			var $this = $(this),
 				topEdge = $this.offset().top - 150,
 				bottomEdge = topEdge + $this.height(),
@@ -57,7 +62,6 @@
 
 					link.removeClass('sidebar__link--active');
 					reqLink.addClass('sidebar__link--active');
-
 			}
 		});
 	}

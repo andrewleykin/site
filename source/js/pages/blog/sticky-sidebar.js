@@ -28,7 +28,7 @@
             }
         });
     }).catch(function(){
-        console.log('sidebar нету на странице');
+        return ;
     });
 
-})(); // --> Закончилась функция ready
+})();

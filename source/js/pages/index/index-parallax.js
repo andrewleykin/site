@@ -1,10 +1,29 @@
 // js для index-parallax
 
 $(function(){
+
+	// задаём переменные
 	var parallaxContainer = $('.parallax'),
 		layers = $('.parallax__layer');
 
 
+	// промис который будет проверять наличие Главного параллакса на странице
+	var parallaxPromise = new Promise (function(resolve, reject) {
+			if (parallaxContainer.length) {
+				resolve();
+			} else {
+				reject();
+			}
+		});
+
+	// функция при наличии главного параллакса
+	parallaxPromise.then(function(){
+		window.addEventListener('mousemove', moveLayers);
+	}).catch(function(){
+		return ;
+		});
+
+	// функция для движения слоёв
 	var moveLayers = function (e) {
 		var initialX = (window.innerWidth / 2) - e.pageX,
 			initialY = (window.innerHeight / 2) - e.pageY;
@@ -18,6 +37,4 @@ $(function(){
 			layer.style.transform = transformString;
 		});
 	};
-
-	window.addEventListener('mousemove', moveLayers);
 });

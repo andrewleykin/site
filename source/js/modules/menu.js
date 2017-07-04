@@ -11,8 +11,25 @@
       social = $('.header__social'),
       animate = 'main-menu__animate';
 
+    // промис который будет проверять наличие ссылки(гамбургера)
+    var menuPromise = new Promise (function(resolve, reject) {
+      if (link.length) {
+        resolve();
+      } else {
+        reject();
+      }
+    });
+
+    // функция при наличии ссылки(гамбургера)
+    menuPromise.then(function(){
+      link.on('click', clickFunction);
+    }).catch(function(){
+      return ;
+    });
+
+
   // Функция при нажатии на меню-шамбургер
-  link.click(function(e) {
+  var clickFunction = function (e) {
   	e.preventDefault(); // отмена стандартных дейсвтйи
 
   	$(this).toggleClass(link__active); // изменяем на активное состояние
@@ -30,8 +47,8 @@
 
   	// через 700 милисекунд отображать список меню
   	setTimeout(function(){
-  		list.slideToggle();
+  		list.slideToggle().stop(true, true);
   	},700);
 
-  });
+  };
 })();
