@@ -5,6 +5,10 @@
 	background: rgba(255,255,255,0.7);
 	border-radius: 5px;
 	color: $greyColor;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	@include flex(column, center, flex-start);
 	span {
 		margin-bottom: 25px;
@@ -38,7 +42,9 @@
 	.contacts {
 		width: 100%;
 		background: $whiteColor;
-		
+		top: 0;
+		left: 0;
+		transform: translate(0);
 	}
 	.contacts__title {
 		margin: 15px auto 20px;

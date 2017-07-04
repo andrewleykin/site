@@ -3,20 +3,15 @@
 .map {
 	min-height: 830px;
 	width: 100%;
-	background: url("../img/map__bg.jpg") no-repeat center center;
-	background-size: cover;
-	@include flex(row, center, center);
 }
-
+.map-wrap {
+	position: relative;
+	width: 100%;
+}
 // Медиа запросы
 
 @media screen and (max-width: 820px) {
-	.map {
+	.map{
 		min-height: 650px;
-	}
-}
-@media (max-width: 480px) {
-	.map {
-		align-items: flex-start;
 	}
 }
