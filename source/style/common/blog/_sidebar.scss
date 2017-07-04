@@ -12,7 +12,7 @@
 		color: $greyColor;
 		transition: $trs_time all;
 		position: relative;
-		&-active {
+		&--active {
 			color: #00bfa5;
 			position: relative;
 			font-family: $boldFont;
@@ -44,6 +44,13 @@
 			top: -8px;
 		}
 	}
+}
+
+// для прилипания
+.sidebar__fixed {
+	position: fixed;
+	top: 6%;
+	left: 7.8%;
 }
 
 // Медиа запросы

@@ -1,6 +1,6 @@
 // для блока контента
 
 .content {
-	@include flex(row,space-between,flex-start);
+	@include flex(row,flex-end,flex-start);
 	padding-top: 70px;
 }
