@@ -19,8 +19,13 @@ mixin circle (name, number)
       span.skills__name= name
 
 mixin svg-bg (name)
-  svg(role='img', title= name, class='header-text header-text--' + name)&attributes(attributes)
-    use(xlink:href='app/img/sprite/sprite.svg#'+ name)
+  if(name == 'rounds')
+    svg(role='img', title= name, class='preloader__' + name)&attributes(attributes)
+      use(xlink:href='app/img/sprite/sprite.svg#'+ name)
+  else
+    svg(role='img', title= name, class='header-text header-text--' + name)&attributes(attributes)
+      use(xlink:href='app/img/sprite/sprite.svg#'+ name)
+
 
 
 mixin layer (index)
