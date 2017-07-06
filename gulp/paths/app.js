@@ -6,6 +6,7 @@ module.exports = [
   './source/js/modules/menu.js',
   './source/js/modules/parallax.js',
   './source/js/modules/preloader.js',
+  './source/js/modules/validate.js',
   './source/js/pages/index/index-parallax.js',
   './source/js/pages/index/flip.js',
   './source/js/pages/blog/sticky-sidebar.js',

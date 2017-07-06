@@ -35,12 +35,12 @@
     .blur-form
   .feedback-form-block
     span.feedback-form__title.title-min Связаться со мной
-    form(action="#").feedback-form
-      input.feedback-form__name(
+    form(action="#").feedback-form.js__form
+      input.feedback-form__name.js__input(
       type="text"
       placeholder="Имя"
       )
-      input.feedback-form__email(
+      input.feedback-form__email.js__input.js__form-email(
       type="email"
       placeholder="Email"
       )
@@ -48,7 +48,7 @@
       placeholder="Введите сообщение"
       )
       .feedback-form__bottom
-        input.feedback-form__submit(
+        input.feedback-form__submit.js__form-btn(
         type="submit"
         value="Отправить"
         )

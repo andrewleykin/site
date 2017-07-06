@@ -17,8 +17,9 @@
 	width: 100%;
 	z-index: 9111;
 	padding-top: 100px;
-	display: none;
-	transition: $trs_time all;
+	display: block;
+	transition: 1s all;
+	transform: translateY(-100%);
 	@media (max-width: 480px) {
 		margin-bottom: 20px;
 		padding-top: 120px; 

@@ -44,23 +44,23 @@ block content
         .login
           .login__top
             span.login__title.title-min Авторизуйтесь
-            form.login__form(action="#")
-              input.login__login(
+            form.login__form.js__form(action="#")
+              input.login__login.js__input(
                 placeholder="Логин"
                 type="text"
                 name="login"
               )
               label.login__login-label(for="login")
-                i.fa.fa-user
-              input.login__pass(
+                i.fa.fa-user.js__form-icon--user
+              input.login__pass.js__input(
                 placeholder="Пароль"
                 type="password"
                 name="pass"
               )
               label.login__pass-label(for="pass")
-                i.fa.fa-key
+                i.fa.fa-key.js__form-icon--pass
               .login__check-block
-                input.login__check(
+                input.login__check.js__input(
                 type="checkbox"
                 id="checkbox"
                 )
@@ -69,7 +69,7 @@ block content
                   | Я человек
               span.login__q Вы точно не робот?
               .login__radio-block
-                input.login__radio(
+                input.login__radio.js__input(
                 type="radio"
                 name="radio"
                 id="radio1"
@@ -81,7 +81,7 @@ block content
                 id="radio2"
                 )
                 label.login__radio-label(for="radio2") Не уверен 
-              input.login__btn(
+              input.login__btn.js__form-btn.btn__disabled(
               type="submit"
               name="submit"
               value="Войти"

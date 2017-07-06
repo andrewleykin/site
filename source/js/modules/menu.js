@@ -28,6 +28,7 @@
     });
 
 
+
   // Функция при нажатии на меню-шамбургер
   var clickFunction = function (e) {
   	e.preventDefault(); // отмена стандартных дейсвтйи
@@ -40,15 +41,16 @@
   		setTimeout(function(){
   			social.css('opacity', '0'); // через 200 милисекунд скрыть иконки
   		},200);
-  	} else { // Если кнопка не активна
-  		bg.css('display', 'none').removeClass(animate); // скрыть меню, удалить класс анимации
-  		social.css('opacity', '1') // отобразить иконки
-  	}
+    	// через 700 милисекунд отображать список меню
+    	setTimeout(function(){
+    		list.css('transform', 'translateY(0)');
+    	},800);
+    } else { // Если кнопка не активна
+      bg.css('display', 'none').removeClass(animate); // скрыть меню, удалить класс анимации
+      social.css('opacity', '1') // отобразить иконки
+      list.css('transform', 'translateY(-100%)');
+    }
 
-  	// через 700 милисекунд отображать список меню
-  	setTimeout(function(){
-  		list.slideToggle().stop(true, true);
-  	},700);
 
   };
 })();

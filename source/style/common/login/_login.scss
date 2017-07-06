@@ -54,6 +54,7 @@
 				display: block;
 				font-size: 20px;
 				color: #C4CBCD;
+				transition: all linear $trs_time;
 			}
 		}
 	}
@@ -181,7 +182,12 @@
 		border-bottom-left-radius: $user-block__radius;
 	}
 }
+// для неактивной кнопки
 
+.btn__disabled {
+	background: #ccc;
+	cursor: default;
+}
 // для иконки при фокусе на текстовом поле
 .login__login:focus + .login__login-label {
 	i {

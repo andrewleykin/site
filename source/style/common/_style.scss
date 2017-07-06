@@ -17,6 +17,7 @@ ul {
   list-style: none;
 }
 
+
 a {
 	text-decoration: none;
 	color: black;
@@ -92,6 +93,7 @@ main::after {
 		height: 180vh;
 	}
 }
+
 
 // миксины
 @mixin flex($fd, $jc, $ai) {
