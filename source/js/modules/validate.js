@@ -13,7 +13,7 @@
 			}
 	});
 
-	formPrmise.then(function(){
+	formPromise.then(function(){
 		$(function(){
 			validFunc();
 		});
@@ -30,6 +30,12 @@
 			iconUser = $('.js__form-icon--user'),
 			iconPass = $('.js__form-icon--pass'),
 			email = form.find('.js__form-email');
+
+
+		input.each(function(i, el) {
+			var $elem = $(el),
+				value = $elem.val();
+		});
 
 
 	};
