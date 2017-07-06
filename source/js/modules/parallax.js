@@ -7,19 +7,12 @@ $(function(){
 
 	// промис который будет проверять наличие svgText в page-header
 	var parallaxPromise = new Promise (function(resolve, reject) {
-			if (svgText.length) {
+			if (svgText) {
 				resolve();
-			} else {
-				reject();
 			}
 		});
 
-	// функция при наличии svgText в page-header
-	parallaxPromise.then(function(){
-		parallax();
-	}).catch(function(){
-		return ;
-		});
+
 
 	// функция для parallax при скроле
 	var parallax = (function () {
@@ -42,7 +35,13 @@ $(function(){
 	}());
 	window.onscroll = function () {
 		var wScroll = window.pageYOffset;
-		parallax.init(wScroll);
+		if (svgText) {
+				parallax.init(wScroll);
+			}
+		// функция при наличии svgText в page-header
+		// parallaxPromise.then(function(){
+		// 	parallax.init(wScroll);
+		// });
 	}
 })
 

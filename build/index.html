@@ -18,8 +18,10 @@
   </head>
   <body>
     <div class="preloader">
-      <svg class="preloader__rounds" role="img" title="rounds">
-        <use xlink:href="app/img/sprite/sprite.svg#rounds"></use>
+      <svg class="preloader__rounds" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewbox="0 0 144 144" enable-background="new 0 0 150 150" xml:space="preserve">
+        <circle opacity="0.4" stroke-miterlimit="10" enable-background="new    " cx="72" cy="71.999" r="70"></circle>
+        <circle opacity="0.7" stroke-miterlimit="10" enable-background="new    " cx="72" cy="72" r="55"></circle>
+        <circle stroke-miterlimit="10" cx="72" cy="72" r="40"></circle>
       </svg>
       <div class="preloader__percent">0%</div>
     </div>
@@ -47,8 +49,8 @@
               <nav class="user-block__nav">
                 <ul class="user-block__list">
                   <li class="user-block__item"><a class="user-block__link" href="works.html">Мои   работы</a></li>
-                  <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне</a></li>
-                  <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li>
+                  <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне
+                      <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li></a></li>
                 </ul>
               </nav>
             </div>
@@ -59,9 +61,9 @@
             <div class="login__top"><span class="login__title title-min">Авторизуйтесь</span>
               <form class="login__form js__form" action="#">
                 <input class="login__login js__input" placeholder="Логин" type="text" name="login">
-                <label class="login__login-label" for="login"><i class="fa fa-user js__form-icon--user"></i></label>
+                <label class="login__login-label" for="login"><i class="fa fa-user js__form-icon"></i></label>
                 <input class="login__pass js__input" placeholder="Пароль" type="password" name="pass">
-                <label class="login__pass-label" for="pass"><i class="fa fa-key js__form-icon--pass"></i></label>
+                <label class="login__pass-label" for="pass"><i class="fa fa-key js__form-icon"></i></label>
                 <div class="login__check-block">
                   <input class="login__check js__input" type="checkbox" id="checkbox">
                   <label class="login__check-label" for="checkbox"> <i class="fa fa-check"></i>Я человек</label>
@@ -72,7 +74,7 @@
                   <input class="login__radio" type="radio" name="radio" id="radio2">
                   <label class="login__radio-label" for="radio2">Не уверен </label>
                 </div>
-                <input class="login__btn js__form-btn btn__disabled" type="submit" name="submit" value="Войти"><a class="login__link" href="#">На главную</a>
+                <input class="login__btn js__form-btn" type="submit" name="submit" value="Войти"><a class="login__link" href="#">На главную</a>
               </form>
             </div>
           </div>
