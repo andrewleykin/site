@@ -12,7 +12,7 @@
 		text-align: center;
 		margin-bottom: 70px;
 		border-radius: $user-block__radius;
-		height: 472px;
+		height: 480px;
 		position: relative;
 		overflow: hidden;
 	}
@@ -38,7 +38,7 @@
 		position: relative;
 		z-index: 10;
 		&:focus {
-			border: 1px solid $greenColor;
+			border: 2px solid $greenColor;
 			outline: 0;
 		}
 	}
@@ -79,7 +79,15 @@
 	}
 }
 
+// неправильно или правильно заполненный инпут
 
+.form__input--error {
+	border: 2px solid #e44845;
+}
+
+.form__input--success {
+	border: 2px solid $greenColor;
+}
 
 
 .feedback-form-block::before {
@@ -87,8 +95,6 @@
 	display: block;
 	width: 380px;
 	height: 432px;
-	// background: red;
-	// position: relative;
 	background: url(../img/works__feedback__bg.jpg) no-repeat center;
 	background-size: 1184px;
 	background-position: -398px -524px;

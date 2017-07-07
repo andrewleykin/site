@@ -50,12 +50,6 @@
 			border-bottom-left-radius: $user-block__radius;
 			padding: 13px;
 			padding-left: 15px;
-			i {
-				display: block;
-				font-size: 20px;
-				color: #C4CBCD;
-				transition: all linear $trs_time;
-			}
 		}
 	}
 	&__pass-label {
@@ -182,12 +176,32 @@
 		border-bottom-left-radius: $user-block__radius;
 	}
 }
-// для неактивной кнопки
 
-.btn__disabled {
-	background: #ccc;
-	cursor: default;
+// cтили для иконок около инпутов "Логин" и "Пароль"
+.login__login-icon {
+	display: block;
+	font-size: 20px;
+	color: #C4CBCD;
+	transition: all linear $trs_time;
 }
+
+// неправильно или правильно заполненный инпут и иконка
+.form__input--error {
+	border: 2px solid #e44845;
+}
+
+.form__input--success {
+	border: 2px solid $greenColor;
+}
+
+.form__icon--error {
+	color: #e44845;
+}
+
+.form__icon--success {
+	color: $greenColor;
+}
+
 // для иконки при фокусе на текстовом поле
 .login__login:focus + .login__login-label {
 	i {
@@ -200,6 +214,7 @@
 		color: $greenColor;
 	}
 }
+
 
 
 // для текста при выбранной радио кнопке
