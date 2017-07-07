@@ -21,9 +21,9 @@ $(function(){
 
 			/* если функция checkDistance вернула return то, добавить класс / иначе удалить */
 			if(checkDistance(scrollTop)) {
-				elem.addClass('js-circle-animate');
+				elem.addClass('js__circle-animate');
 			} else {
-				elem.removeClass('js-circle-animate');
+				elem.removeClass('js__circle-animate');
 			}
 		});
 	}).catch(function(){
@@ -34,7 +34,7 @@ $(function(){
 	var checkDistance = function(scrollTop) {
 		var offset = elem.offset().top,
 			windowMargin = Math.ceil($(window).height() / 3),
-			topBorder = offset - scrollTop - windowMargin,
+			topBorder = offset - scrollTop - windowMargin - 100,
 			bottomEdge = elem.outerHeight(true) + offset,
 			bottomBorder = scrollTop + windowMargin - bottomEdge;
 

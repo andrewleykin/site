@@ -3,7 +3,7 @@
 .feedback__title-block
   +svg-bg('about_header')(class="header-text--about_header_dark")
   .feedback__title.title-big Что обо мне говорят
-.feedback
+.feedback.js__feedback
   .feedback__img
     img(src="./app/img/works__feedback__bg.jpg").feedback__img__img
   .comment
@@ -40,11 +40,11 @@
       type="text"
       placeholder="Имя"
       )
-      input.feedback-form__email.js__input.js__form-email(
+      input.feedback-form__email.js__form-email(
       type="email"
       placeholder="Email"
       )
-      textarea.feedback-form__message(
+      textarea.feedback-form__message.js__input(
       placeholder="Введите сообщение"
       )
       .feedback-form__bottom
@@ -52,11 +52,11 @@
         type="submit"
         value="Отправить"
         )
-        input.feedback-form__reset(
+        input.feedback-form__reset.js__form-btn--reset(
         type="reset"
         value="Очистить"
         )
-  .feedback__arrow-up
+  .feedback__arrow-up.js__arrow-up
     i.fa.fa-chevron-up
 
 

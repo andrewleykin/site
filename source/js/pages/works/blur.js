@@ -13,9 +13,7 @@ $(function(){
 				// 	posTop = -wrapper.offsetTop,
 				// 	blurCss = form.style;
 
-				if(imgWidth.length) {
-					
-				}
+				console.log(imgWidth);
 
 				blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
 				blurCss.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';

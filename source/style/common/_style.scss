@@ -30,15 +30,10 @@ a {
 .wrapper__bg__white {
 	background: $whiteColor;
 }
+
 // для footer
 main {
 	flex: 1 0 auto;
-}
-
-.container-1800 {
-	width: 1800px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .container-1200 {
@@ -71,6 +66,7 @@ main {
 	font-family: $titleFont;
 
 }
+
 // по умолчанию скрывать блок названия страницы
 .blog-title {
 	display: none;
@@ -94,6 +90,37 @@ main::after {
 	}
 }
 
+/*
+
+//tooltip тултип для форм
+
+.form__tooltip {
+	position: relative;
+	background: #e44845;
+	width: 170px;
+	height: 24px;
+	display: block;
+	float: right;
+	margin: -15px 20px 10px 0;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 5px;
+	color: #fff;
+	opacity: 1;
+	transition: all linear $trs_time;
+	&:before{
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-top-color: #e44845;
+		content: "";
+		position: absolute;
+		left: 10px;
+		top: 100%;
+	}
+}
+
+*/
 
 // миксины
 @mixin flex($fd, $jc, $ai) {
