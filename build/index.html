@@ -19,25 +19,25 @@
   <body>
     <div class="preloader">
       <svg class="preloader__rounds" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px" height="144px" viewbox="0 0 144 144" enable-background="new 0 0 150 150" xml:space="preserve">
-        <circle opacity="0.4" stroke-miterlimit="10" enable-background="new    " cx="72" cy="71.999" r="70"></circle>
-        <circle opacity="0.7" stroke-miterlimit="10" enable-background="new    " cx="72" cy="72" r="55"></circle>
+        <circle opacity="0.4" stroke-miterlimit="10" enable-background="new" cx="72" cy="71.999" r="70"></circle>
+        <circle opacity="0.7" stroke-miterlimit="10" enable-background="new" cx="72" cy="72" r="55"></circle>
         <circle stroke-miterlimit="10" cx="72" cy="72" r="40"></circle>
       </svg>
       <div class="preloader__percent">0%</div>
     </div>
     <div class="parallax">
-      <div class="parallax__layer"><img class="parallax__image01 parallax__image" src="app/img/index-parallax-layer01.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image02 parallax__image" src="app/img/index-parallax-layer02.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image03 parallax__image" src="app/img/index-parallax-layer03.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image04 parallax__image" src="app/img/index-parallax-layer04.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image05 parallax__image" src="app/img/index-parallax-layer05.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image06 parallax__image" src="app/img/index-parallax-layer06.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image07 parallax__image" src="app/img/index-parallax-layer07.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image08 parallax__image" src="app/img/index-parallax-layer08.png"/></div>
-      <div class="parallax__layer"><img class="parallax__image09 parallax__image" src="app/img/index-parallax-layer09.png"/></div>
+      <div class="parallax__layer"><img class="parallax__image01 parallax__image" src="app/img/index-parallax-layer01.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image02 parallax__image" src="app/img/index-parallax-layer02.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image03 parallax__image" src="app/img/index-parallax-layer03.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image04 parallax__image" src="app/img/index-parallax-layer04.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image05 parallax__image" src="app/img/index-parallax-layer05.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image06 parallax__image" src="app/img/index-parallax-layer06.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image07 parallax__image" src="app/img/index-parallax-layer07.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image08 parallax__image" src="app/img/index-parallax-layer08.png" alt="Mountains-background"/></div>
+      <div class="parallax__layer"><img class="parallax__image09 parallax__image" src="app/img/index-parallax-layer09.png" alt="Mountains-background"/></div>
     </div>
     <section class="main page-header page-header--big">
-      <button class="btn-autho"><a class="btn-autho__link" href="#">Авторизоваться</a></button>
+      <div class="btn-autho"><a class="btn-autho__link" href="#">Авторизоваться</a></div>
       <div class="flip">
         <figure class="flip__front">
           <div class="user-block user-block__bg__white">
@@ -49,8 +49,8 @@
               <nav class="user-block__nav">
                 <ul class="user-block__list">
                   <li class="user-block__item"><a class="user-block__link" href="works.html">Мои   работы</a></li>
-                  <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне
-                      <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li></a></li>
+                  <li class="user-block__item"><a class="user-block__link user-block__link__border" href="about.html">Обо   мне</a></li>
+                  <li class="user-block__item"><a class="user-block__link" href="blog.html">Блог</a></li>
                 </ul>
               </nav>
             </div>
@@ -60,9 +60,9 @@
           <div class="login">
             <div class="login__top"><span class="login__title title-min">Авторизуйтесь</span>
               <form class="login__form js__form" action="#">
-                <input class="login__login js__input" placeholder="Логин" type="text" name="login">
+                <input class="login__login js__input" placeholder="Логин" type="text" name="login" id="login">
                 <label class="login__login-label" for="login"><i class="fa fa-user js__form-icon"></i></label>
-                <input class="login__pass js__input" placeholder="Пароль" type="password" name="pass">
+                <input class="login__pass js__input" placeholder="Пароль" type="password" name="pass" id="pass">
                 <label class="login__pass-label" for="pass"><i class="fa fa-key js__form-icon"></i></label>
                 <div class="login__check-block">
                   <input class="login__check js__check" type="checkbox" id="checkbox">

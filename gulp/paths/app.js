@@ -14,6 +14,5 @@ module.exports = [
   './source/js/pages/blog/nav-sidebar.js',
   './source/js/pages/about/circle-animate.js',
   './source/js/pages/about/map.js',
-  './source/js/pages/works/blur.js',
   './source/js/libs/svg4everybody.js'
 ];

@@ -4,6 +4,7 @@ $(function(){
 	var blur = (function(){
 		var wrapper = document.querySelector('.blur-form-wrapper'),
 			form = document.querySelector('.blur-form');
+		console.log('form');
 
 		return {
 			set: function () {
@@ -13,7 +14,6 @@ $(function(){
 				// 	posTop = -wrapper.offsetTop,
 				// 	blurCss = form.style;
 
-				console.log(imgWidth);
 
 				blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
 				blurCss.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';
@@ -21,7 +21,7 @@ $(function(){
 		}
 	}());
 
-	blur.set();
+	blur();
 
 	window.onresize = function () {
 		blur.set();

@@ -1,3 +1,7 @@
+/*
+ Стили для карты гугл
+ подключается в css:foundation
+*/
 .iw-photo {
   background-size: cover;
   height: 150px;
