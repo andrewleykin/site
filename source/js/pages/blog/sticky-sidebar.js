@@ -5,7 +5,9 @@
     // задаем переменные
     var sidebar = $('.sidebar'),
         sidebarFix = 'sidebar__fixed',
-        scrollHeight = 650;
+        btnSidebar = $('.sidebar__show'),
+        btnSidebarShow = 'js__sidebar-show',
+        scrollHeight = 620;
 
     // промис который будет проверять наличие Сайдбара на странице
     var sidebarPromise = new Promise (function(resolve, reject) {
@@ -23,8 +25,10 @@
             /* если скролл больше заданной высоты, то добавить класс */
             if($(this).scrollTop() > scrollHeight){
                 sidebar.addClass(sidebarFix);
+                btnSidebar.addClass(btnSidebarShow);
             } else if ($(this).scrollTop() < scrollHeight) {
                 sidebar.removeClass(sidebarFix);
+                btnSidebar.removeClass(btnSidebarShow);
             }
         });
     }).catch(function(){

@@ -35,12 +35,38 @@
 	left: 10%;
 }
 
+// для анимации появления
+.flip__animation {
+	animation: flip 1.5s;
+}
+
+@keyframes flip {
+	from {
+		opacity: 0;
+		transform: translateX(-10%) rotateX(90deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(-10%) rotateX(0);
+	}
+}
+
 // Медиа запросы 
 
 @media (max-width:768px) {
 	.flip {
 		transform: translateX(0);
 		left: 25%;
+	}
+	@keyframes flip {
+		from {
+			opacity: 0;
+			transform: rotateX(90deg);
+		}
+		to {
+			opacity: 1;
+			transform: rotateX(0);
+		}
 	}
 }
 
@@ -61,5 +87,15 @@
 	}
 	.flip__back {
 		left: 0;
+	}
+	@keyframes flip {
+		from {
+			opacity: 0;
+			transform: translateX(-50%) rotateX(90deg);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(-50%) rotateX(0);
+		}
 	}
 }

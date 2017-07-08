@@ -54,7 +54,8 @@
 		}
 	}
 	.page-header--big {
-		min-height: 100vh;
+		height: 100vh;
+		min-height: 650px;
 		justify-content: space-between;
 	}
 }
@@ -65,5 +66,8 @@
 		&__img {
 			min-height: 550px;
 		}
+	}
+	.page-header--big {
+		min-height: 650px;
 	}
 }

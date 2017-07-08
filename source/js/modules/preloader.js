@@ -1,5 +1,6 @@
 // js файл для прелоадера на любых страницах
 
+
 	// задаём переменные
 	var images = $('img'),
 		imagesTotalCount = images.length,
@@ -60,9 +61,13 @@
 					}
 				}, 1000);
 			}
+			if(preloader.hasClass('done')) {
+				$('.flip').addClass('flip__animation');
+			}
 		}
 	}).catch(function(){
 		return ;
 		});
+
 
 
