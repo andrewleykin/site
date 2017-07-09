@@ -5,7 +5,10 @@
 @import '../common/works/_works-title';
 
 // Стили для слайдера
-@import '../common/works/_slider';
+@import '../common/works/slider/_slider';
+
+// Стили для слайдера-контроль кнопок
+@import '../common/works/slider/_slider-controls';
 
 // стили для блока feedback
 @import '../common/works/_feedback';

@@ -17,11 +17,17 @@
           | Посмотреть сайт
   .slider-right
     .slider__display
-      img(src="app/img/works1.png" alt="My works")
-    .slider__controls
-      .slider__prev
+      img(src="app/img/works/works1.png" alt="My works")
+    .slider__controls.slider-controls
+      .slider__prev.js__slider-controls
         i.fa.fa-chevron-down
-        img(src="app/img/works3.png" alt="Prev works")
-      .slider__next
+        ul.slider-controls__list
+          - for (var i =1; i <= 4; i++)
+              li.slider-controls__item(class=`${(i == 1) ? 'active' : ''}`)
+                img(src=`/app/img/works/slider__prev/works${i}.png`, alt='works__slider', class='slider-controls__img')
+      .slider__next.js__slider-controls
         i.fa.fa-chevron-up
-        img(src="app/img/works2.png" alt="next works")
+        ul.slider-controls__list
+          - for (var i =1; i <= 4; i++)
+              li.slider-controls__item(class=`${(i == 1) ? 'active' : ''}`)
+                img(src=`/app/img/works/slider__next/works${i}.png`, alt='works__slider', class='slider-controls__img')

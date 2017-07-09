@@ -1,0 +1,100 @@
+// Слайдер, контроль кнопки
+
+.slider__controls {
+	@include flex(row,center,center);
+	width: 100%;
+}
+
+
+.slider__prev, .slider__next {
+	width: 50%;
+	height: 225px;
+	display: flex;
+	transition: all $trs_time;
+	cursor: pointer;
+	position: relative;
+	opacity: 1;
+	overflow: hidden;
+	&:hover {
+		&::after {
+			opacity: 0.5;
+		}
+	}
+	&::after {
+		content: "";
+		display: block;
+		background: #B6B4AE;
+		opacity: 0.7;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index:2;
+		transition: $trs_time all;
+	}
+	i {
+		cursor: pointer;
+		margin: auto;
+		font-size: 40px;
+		transition: $trs_time all;
+		position: relative;
+		opacity: 0.7;
+		z-index:5;
+		color: #fff;
+	}
+}
+
+
+.slider__prev:hover {
+	i {
+		opacity: 1;
+		transform: translateY(30px) scale(1.3);
+	}
+}
+
+
+.slider__next:hover {
+	i {
+		opacity: 1;
+		transform: translateY(-30px) scale(1.3);
+	}
+}
+
+.slider__prev {
+	.slider-controls__item {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: -100%;
+		left: 0;
+		&.active {
+			top: 0;
+		}
+	}
+}
+
+.slider__next {
+	.slider-controls__item {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		&.active {
+			top: 0;
+		}
+	}
+}
+
+
+.slider-controls__img {
+	display: block;
+	width: 85%;
+	height: 85%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	transition: $trs_time all;
+}
