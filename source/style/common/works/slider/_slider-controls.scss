@@ -68,7 +68,7 @@
 		position: absolute;
 		top: -100%;
 		left: 0;
-		&.active {
+		&.slider-controls__item-active {
 			top: 0;
 		}
 	}
@@ -81,11 +81,12 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		&.active {
+		&.slider-controls__item-active {
 			top: 0;
 		}
 	}
 }
+
 
 
 .slider-controls__img {
@@ -97,4 +98,17 @@
 	top: 50%;
 	transform: translate(-50%,-50%);
 	transition: $trs_time all;
+}
+
+
+
+@media (max-width: 480px) {
+.slider__prev,.slider__next {
+		height: 94px;
+		&:hover {
+			i {
+				transform: none;
+			}
+		}
+	}
 }
