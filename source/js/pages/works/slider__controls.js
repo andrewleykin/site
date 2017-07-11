@@ -1,7 +1,7 @@
 // js файл для анимации контроль кнопок в слайдере
 
-
 $(function(){
+
 
 	const btnPrev = $('.slider__prev');
 	const btnNext = $('.slider__next');

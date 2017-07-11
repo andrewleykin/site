@@ -30,6 +30,7 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:fonts',
     'copy:image',
+    'copy:data',
     'css:foundation',
     'sprite:svg'
   ),
@@ -49,6 +50,7 @@ $.gulp.task('build', $.gulp.series(
     'js:process',
     'copy:fonts',
     'copy:image',
+    'copy:data',
     'css:foundation',
     'sprite:svg'
   )

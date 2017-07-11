@@ -15,8 +15,9 @@ module.exports = [
   './source/js/pages/blog/nav-sidebar.js',
   './source/js/pages/blog/sidebar__show.js',
   './source/js/pages/about/circle-animate.js',
-  './source/js/pages/about/map.js',
   './source/js/pages/works/slider__controls.js',
   './source/js/pages/works/slider__display.js',
-  './source/js/libs/svg4everybody.js'
+  './source/js/pages/works/slider__info.js',
+  './source/js/libs/svg4everybody.js',
+  './source/js/pages/about/map.js'
 ];

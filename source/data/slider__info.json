@@ -1,0 +1,25 @@
+// файл данных для слайдера
+
+
+var sliderInfo = [
+	{
+		title: "Cайт школы онлайн образования",
+		tools: ["html","css", "javascript"],
+		link: "https://loftschool.com"
+	},
+	{
+		title: "Cайт 2",
+		tools: ["html", "php"],
+		link: "https://loftschool.com"
+	},
+	{
+		title: "Cайт 3",
+		tools: ["jquery", "react"],
+		link: "https://loftschool.com"
+	},
+	{
+		title: "Cайт 4",
+		tools: ["wordpress", "sass"],
+		link: "https://loftschool.com"
+	}
+]
