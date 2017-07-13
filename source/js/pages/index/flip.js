@@ -23,6 +23,7 @@ $(function(){
 		link.click(function(e) {
 			e.preventDefault(); // отмена стандартных дейсвтйи
 
+			link.css('opacity', '0');
 			box.toggleClass('js__flip');
 		});
 
@@ -30,7 +31,26 @@ $(function(){
 		mainLink.click(function(e) {
 			e.preventDefault(); // отмена стандартных дейсвтйи
 
+			link.css('opacity', '1');
 			box.removeClass('js__flip');
+		});
+
+		// разворачивать блок при нажатии на Esc
+		$('body').keyup(function(e) {
+			if(box.hasClass('js__flip')) {
+				if(e.which==27) {
+					link.css('opacity', '1');
+					box.removeClass('js__flip');
+				}
+			}
+		});
+
+		// при клике на область вокруг блока, разворачивать блок
+		$('.parallax').click(function() {
+			if(box.hasClass('js__flip')) {
+				link.css('opacity', '1');
+				box.removeClass('js__flip');
+			}
 		});
 	}).catch(function(){
 			return ;

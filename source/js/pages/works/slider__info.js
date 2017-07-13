@@ -2,6 +2,7 @@
 
 $(function() {
 
+	// значения
 	let sliderInfo = [
 		{
 			"title": "Cайт школы онлайн образования",
@@ -25,6 +26,7 @@ $(function() {
 		}
 	]
 
+	// переменные
 	const btnPrev     = $('.slider__prev');
 	const btnNext     = $('.slider__next');
 	const infoBlock   = $('.slider-left__info');
@@ -34,36 +36,33 @@ $(function() {
 	let link          = infoBlock.find('.slider__link');
 
 
-	const setLinkPrev = (container) => {
+	// функция для смены ссылки
+	const setLink = (container) => {
+
+		// переменные
 		let items        = container.find('.slider-controls__item');
 		let activeItem   = items.filter('.slider-controls__item-active');
 		let counter      = activeItem.index();
 
+		// выбрать нужныую ссылку
 		const reqLink = slideInfo[counter].link;
 
+		// сменить ссылку 
 		link.attr('href', reqLink);
 
 	}
 
-	const setLinkNext = (container) => {
-		let items        = container.find('.slider-controls__item');
-		let activeItem   = items.filter('.slider-controls__item-active');
-		let counter      = activeItem.index();
-
-		const reqLink = slideInfo[counter].link;
-
-		link.attr('href', reqLink);
-
-	}
-
-
+	// функция для анимации строки
 	const animateRow = (str) => {
+
+		// переменные
 		let time = 50,
 			animate = str.find('.example').children('span');
 
-
+		// изначально скрыть элементы
 		animate.css('opacity', 0);
 
+		/* для каждого элемента с разной скоростью добавить класс с анимацией */
 		animate.each(function() {
 			let $this = $(this);
 			setTimeout(function () {
@@ -74,7 +73,10 @@ $(function() {
 
 	};
 
+	// функция для смены описания "Назад"
 	const spanRowPrev = (container,str,data) => {
+
+		// переменные
 		let items        = container.find('.slider-controls__item');
 		let activeItem   = items.filter('.slider-controls__item-active');
 		let counter      = activeItem.index();
@@ -83,6 +85,7 @@ $(function() {
 		let toRow        = document.createElement('span');
 		$(toRow).addClass('example');
 
+		// разбить строку на спаны по одному символу
 		row.split('').forEach(function(item){
 			span.innerHTML = item;
 			if (item === ' ') span.style.display = "inline";
@@ -90,10 +93,14 @@ $(function() {
 			span = document.createElement('span');
 		});
 
-			str.html(toRow);
+		// заменить то что было на то что получилось
+		str.html(toRow);
 	}
 
+	// функция для смены описания "Вперед"
 	const spanRowNext = (container,str,data) => {
+
+		// переменные
 		let items        = container.find('.slider-controls__item');
 		let activeItem   = items.filter('.slider-controls__item-active');
 		let counter      = activeItem.index();
@@ -102,6 +109,7 @@ $(function() {
 		let toRow        = document.createElement('span');
 		$(toRow).addClass('example');
 
+		// разбить строку на спаны по одному символу
 		row.split('').forEach(function(item){
 			span.innerHTML = item;
 			if (item === ' ') span.style.display = "inline";
@@ -109,9 +117,11 @@ $(function() {
 			span = document.createElement('span');
 		});
 
-			str.html(toRow);
+		// заменить то что было на то что получилось
+		str.html(toRow);
 	}
 
+	// при клике на кнопку "Назад"
 	btnPrev.on('click', function(e) {
 		e.preventDefault();
 
@@ -119,9 +129,10 @@ $(function() {
 		animateRow(title);
 		spanRowPrev(btnPrev,tools, 'tools');
 		animateRow(tools);
-		setLinkPrev(btnPrev);
+		setLink(btnPrev);
 	});
 
+	// при клике на кнопку "Вперед"
 	btnNext.on('click', function(e) {
 		e.preventDefault();
 
@@ -129,7 +140,7 @@ $(function() {
 		animateRow(title);
 		spanRowNext(btnNext,tools,'tools');
 		animateRow(tools);
-		setLinkNext(btnNext);
+		setLink(btnNext);
 	});
 
 

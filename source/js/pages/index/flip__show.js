@@ -7,17 +7,21 @@
 	var flip = $('.flip'),
 		flipAnimation = 'flip__animation';
 
-	// при загрузке странице
-	$(window).on('load',() =>{
+	// условие проверяющее наличие Флип контейнера на странице
+	if(flip.length) {
 
-		//с задержкой 1 сек
-		setTimeout(()=>{
+		// при загрузке странице
+		$(window).on('load',() =>{
 
-			// добавить класс с анимацией
-			flip.addClass(flipAnimation);
-		}, 1000);
+			//с задержкой 1 сек
+			setTimeout(()=>{
 
-	});
+				// добавить класс с анимацией
+				flip.addClass(flipAnimation);
+			}, 1000);
 
+		});
+
+	}
 
 }());
