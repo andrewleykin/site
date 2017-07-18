@@ -93,7 +93,7 @@
 		height: 25vw;
 	}
 }
-@media (max-width: 665px) {
+@media (max-width: 650px) {
 	.header-text--about_header_dark {
 		top: -5%;
 	}
@@ -104,13 +104,14 @@
 	}
 }
 @media (max-width: 480px) {
-	.header-text--about_header_dark {
-		height: 30vw;
-	}
 	.header-text--about_header {
 		left: 50%;
 		top: 2%;
 		height: 25vw;
+	}
+	.header-text--about_header_dark {
+		height: 20vw;
+		top: -30%;
 	}
 	.header-text--blog_header {
 		height: 30vw;

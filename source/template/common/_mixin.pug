@@ -20,10 +20,10 @@ mixin circle (name, number)
 
 mixin svg-bg (name)
   if(name == 'rounds')
-    svg(role='img', title= name, class='preloader__' + name)&attributes(attributes)
+    svg(role='img', class='preloader__' + name)&attributes(attributes)
       use(xlink:href='app/img/sprite/sprite.svg#'+ name)
   else
-    svg(role='img', title= name, class='header-text header-text--' + name)&attributes(attributes)
+    svg(role='img', class='header-text header-text--' + name)&attributes(attributes)
       use(xlink:href='app/img/sprite/sprite.svg#'+ name)
 
 
