@@ -143,6 +143,8 @@
 @media (max-width: 320px) {
 	.user-block {
 		position: relative;
+		left: 0;
+		transform: translate(0);
 	}
 	.user-block--pages {
 		top: 10%;

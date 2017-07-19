@@ -103,12 +103,20 @@
 
 
 @media (max-width: 480px) {
-.slider__prev,.slider__next {
+	.slider__prev,.slider__next {
 		height: 94px;
 		&:hover {
 			i {
 				transform: none;
 			}
 		}
+	}
+	.slider-controls__img {
+		width: 65%;
+	}
+}
+@media (max-width:360px) {
+	.slider-controls__img {
+		width: 85%;
 	}
 }
