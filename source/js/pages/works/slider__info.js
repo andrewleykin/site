@@ -5,24 +5,24 @@ $(function() {
 	// значения
 	let sliderInfo = [
 		{
-			"title": "Cайт школы онлайн образования",
+			"title": "Свой сайт портфолио",
 			"tools": "html, css, javascript",
-			"link": "https://loftschool.com"
+			"link": "index.html"
 		},
 		{
-			"title": "Cайт 2",
-			"tools": "html, php",
-			"link": "https://ya.ru"
+			"title": "Старый сайт портфолио",
+			"tools": "html, css",
+			"link": "../works/portfolio__homer/index.html"
 		},
 		{
-			"title": "Cайт 3",
-			"tools": "jquery, react",
-			"link": "https://vk.com"
+			"title": "Glacy - магазин мороженого",
+			"tools": "html, css3",
+			"link": "../works/glacy__code/index.html"
 		},
 		{
-			"title": "Cайт 4",
-			"tools": "wordpress, sass",
-			"link": "https://youtube.com"
+			"title": "Тестовое задание",
+			"tools": "html, css, jquery",
+			"link": "../works/ls-test/index.html"
 		}
 	]
 

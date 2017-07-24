@@ -8,26 +8,26 @@
   .slider-left
     .slider-left__info
       .slider__title-block
-        .slider__title.title-min Сайт школы онлайн образования
+        .slider__title.title-min Свой сайт портфолио
       .slider__tools-block
         .slider__tools html, css, javascript
       .slider__link-block
-        a.slider__link(href="https://loftshool.com" target="_blank") 
+        a.slider__link(href="index.html" target="_blank") 
           i.fa.fa-link
           | Посмотреть сайт
   .slider-right
     .slider__display
-      img.slider__display-img(src="app/img/works/works1.png" alt="My works")
+      img.slider__display-img(src="app/img/works/works1.jpg" alt="My works")
     .slider__controls.slider-controls
       .slider__prev.js__slider-controls
         i.fa.fa-chevron-down
         ul.slider-controls__list
           - for (var i =1; i <= 4; i++)
               li.slider-controls__item(class=`${(i == 4) ? 'slider-controls__item-active' : ''}`)
-                img(src=`app/img/works/works${i}.png`, alt='works__slider', class='slider-controls__img')
+                img(src=`app/img/works/works${i}.jpg`, alt='works__slider', class='slider-controls__img')
       .slider__next.js__slider-controls
         i.fa.fa-chevron-up
         ul.slider-controls__list
           - for (var i =1; i <= 4; i++)
               li.slider-controls__item(class=`${(i == 2) ? 'slider-controls__item-active' : ''}`)
-                img(src=`app/img/works/works${i}.png`, alt='works__slider', class='slider-controls__img')
+                img(src=`app/img/works/works${i}.jpg`, alt='works__slider', class='slider-controls__img')
