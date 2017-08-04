@@ -22,12 +22,12 @@
       .slider__prev.js__slider-controls
         i.fa.fa-chevron-down
         ul.slider-controls__list
-          - for (var i =1; i <= 4; i++)
-              li.slider-controls__item(class=`${(i == 4) ? 'slider-controls__item-active' : ''}`)
+          - for (var i =1; i <= 5; i++)
+              li.slider-controls__item(class=`${(i == 5) ? 'slider-controls__item-active' : ''}`)
                 img(src=`app/img/works/works${i}.jpg`, alt='works__slider', class='slider-controls__img')
       .slider__next.js__slider-controls
         i.fa.fa-chevron-up
         ul.slider-controls__list
-          - for (var i =1; i <= 4; i++)
+          - for (var i =1; i <= 5; i++)
               li.slider-controls__item(class=`${(i == 2) ? 'slider-controls__item-active' : ''}`)
                 img(src=`app/img/works/works${i}.jpg`, alt='works__slider', class='slider-controls__img')

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="app/css/foundation.css">
+    <link rel="stylesheet" href="app/css/app.css">
+    <script src="app/js/foundation.js" defer></script>
+    <script src="app/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Блок меню-->
+      <div class="menu">
+        <div class="menu__button"><span class="menu__burger js__menu-button"></span>
+          <div class="logo"><img src="app/img/logo.png"></div>
+        </div>
+        <ul class="menu__list js__menu-list">
+          <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Фото и видео</a></li>
+          <li class="menu__item menu__item--logo">
+            <div class="logo"><img src="app/img/logo.png"></div>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Карта штата</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Гостиницы</a></li>
+        </ul>
+      </div>
+      <!-- Блок header, Шапка-->
+      <div class="header">
+        <div class="header__bg"></div>
+        <div class="header__text"></div>
+        <div class="header__triangle"></div>
+      </div>
+      <!-- Блок descr, Описание сайта-->
+      <div class="descr">
+        <h2 class="descr__title title">Седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+        <p class="descr__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </div>
+      <!-- Блок преимуществ-->
+      <div class="advantage">
+        <div class="advantage__row">
+          <div class="advantage__block advantage__block--light">
+            <div class="advantage__title title">Настоящий городок</div>
+            <div class="advantage__number">- №1 -</div>
+            <div class="advantage__text">Седона не атракцион для туристов, там течет своя жизнь</div>
+          </div>
+          <div class="advantage__photo advantage__photo--1"></div>
+        </div>
+        <div class="advantage__row">
+          <div class="advantage__list">
+            <div class="advantage__block">
+              <svg class="icon-house advantage__icon" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#icon-house"></use>
+              </svg>
+              <div class="advantage__title title">жилье</div>
+              <div class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+            </div>
+            <div class="advantage__block">
+              <svg class="icon-burger advantage__icon" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#icon-burger"></use>
+              </svg>
+              <div class="advantage__title title">Еда</div>
+              <div class="advantage__text">Всегда заказывай фирменный бургер, вы не разочаруетесь!</div>
+            </div>
+            <div class="advantage__block">
+              <svg class="icon-gift advantage__icon" role="img">
+                <use xlink:href="app/img/sprite/sprite.svg#icon-gift"></use>
+              </svg>
+              <div class="advantage__title title">сувениры</div>
+              <div class="advantage__text">Не только китайского, но и местного производства</div>
+            </div>
+          </div>
+        </div>
+        <div class="advantage__row advantage__row--reverse">
+          <div class="advantage__photo advantage__photo--2"></div>
+          <div class="advantage__block advantage__block--light">
+            <div class="advantage__title title">там есть <br>мост дьявола</div>
+            <div class="advantage__number">- №2 -</div>
+            <div class="advantage__text">Да, по нему можно пройти! если конечно вы осмелитесь</div>
+          </div>
+        </div>
+        <div class="advantage__row advantage__row--dark">
+          <div class="advantage__list">
+            <div class="advantage__block">
+              <div class="advantage__title title">небольшая площадь</div>
+              <div class="advantage__number">- №3 -</div>
+              <div class="advantage__text">Все достопримечательности находятся очень близко</div>
+            </div>
+            <div class="advantage__block">
+              <div class="advantage__title title">Красивая дорога</div>
+              <div class="advantage__number">- №4 -</div>
+              <div class="advantage__text">Ехать в седону из лас-вегаса совсем не скучно</div>
+            </div>
+            <div class="advantage__block">
+              <div class="advantage__title title">мало туристов</div>
+              <div class="advantage__number">- №5 -</div>
+              <div class="advantage__text">Большинство едет в гранд каньон и толпится там</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Блок interested, заинтересовались-->
+      <div class="interested">
+        <h3 class="interested__title title">Заинтересовались?</h3>
+        <p class="interested__text">Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search search-active" type="button">поиск гостиницы в седоне</button>
+        <form class="search-form">
+          <div class="form-row">
+            <label>дата заезда:</label>
+            <input type="date">
+          </div>
+          <div class="form-row">
+            <label>дата выезда:</label>
+            <input type="date">
+          </div>
+          <div class="form-row">
+            <div class="form-row__half">
+              <label>взрослые:</label>
+              <input type="number">
+            </div>
+            <div class="form-row__half">
+              <label>дети:</label>
+              <input type="number">
+            </div>
+          </div>
+          <input type="submit" value="Найти">
+        </form>
+        <div class="map"></div>
+      </div>
+      <!-- Блок footer, Подвал проекта-->
+      <div class="footer"><span class="footer__hash">#visitsedona</span>
+        <div class="footer__social">
+          <div class="footer__icon-block">
+            <svg class="icon-twitter footer__icon" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#icon-twitter"></use>
+            </svg>
+          </div>
+          <div class="footer__icon-block">
+            <svg class="icon-facebook footer__icon" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#icon-facebook"></use>
+            </svg>
+          </div>
+          <div class="footer__icon-block">
+            <svg class="icon-youtube footer__icon" role="img">
+              <use xlink:href="app/img/sprite/sprite.svg#icon-youtube"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__copyright"><span class="footer__text">Разработано</span><a class="footer__link" href="#">Andrew Leykin</a></div>
+      </div>
+    </div>
+  </body>
+</html>

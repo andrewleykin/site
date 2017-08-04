@@ -23,6 +23,11 @@ $(function() {
 			"title": "Тестовое задание",
 			"tools": "html, css, jquery",
 			"link": "../works/ls-test/index.html"
+		},
+		{
+			"title": "SEDONA",
+			"tools": "html, css, javascript",
+			"link": "../works/sedona/index.html"
 		}
 	]
 
