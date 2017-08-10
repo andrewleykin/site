@@ -25,9 +25,14 @@ $(function() {
 			"link": "../works/ls-test/index.html"
 		},
 		{
-			"title": "SEDONA",
-			"tools": "html, css, javascript",
+			"title": "Landing - SEDONA",
+			"tools": "html, css, javascript, adaptiv",
 			"link": "../works/sedona/index.html"
+		},
+		{
+			"title": "Lnading - Hostel",
+			"tools": "html, css, adaptiv",
+			"link": "../works/hostel/index.html"
 		}
 	]
 
