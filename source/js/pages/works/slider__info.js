@@ -33,6 +33,11 @@ $(function() {
 			"title": "Lnading - Hostel",
 			"tools": "html, css, adaptiv",
 			"link": "../works/hostel/index.html"
+		},
+		{
+			"title": "Lnading - Keksbi",
+			"tools": "html, css, adaptiv",
+			"link": "../works/keksbi/index.html"
 		}
 	]
 
